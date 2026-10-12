@@ -26,6 +26,7 @@ export function Footer() {
           <ul className="mt-3 space-y-2 text-sm">
             {site.email && <li><a className="opacity-80 hover:underline" href={`mailto:${site.email}`}>{site.email}</a></li>}
             {site.phone && <li><a className="opacity-80 hover:underline" href={`tel:${site.phone.replace(/\s/g, "")}`}>{site.phone}</a></li>}
+            {site.whatsapp && <li><a className="opacity-80 hover:underline" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener noreferrer">Scrivimi su WhatsApp</a></li>}
             <li><Link to="/contatti" className="opacity-80 hover:underline">Modulo di contatto</Link></li>
             <li><Link to="/privacy" className="opacity-80 hover:underline">Privacy policy</Link></li>
           </ul>
@@ -33,7 +34,7 @@ export function Footer() {
       </div>
       <div className="border-t border-ink-foreground/15">
         <p className="container-page py-5 text-xs opacity-70">
-          © {new Date().getFullYear()} {site.name}{site.vatNumber && ` · P. IVA ${site.vatNumber}`}
+          © {new Date().getFullYear()} {site.name}{site.vatNumber && ` · P. IVA ${site.vatNumber}`}{site.address && ` · ${site.address}`}
         </p>
       </div>
     </footer>

@@ -9,11 +9,13 @@ export const site = {
   role: "Consulenza informatica, sviluppo software e automazione",
   tagline: "Soluzioni informatiche per lavorare meglio.",
   area: "Bologna, Modena e dintorni, anche da remoto in tutta Italia",
-  // DA COMPLETARE: lascia stringa vuota per nascondere il recapito dal sito.
-  email: "",
-  phone: "",
-  // DA COMPLETARE: Partita IVA e sede, richiesti nel footer di un'attività professionale.
-  vatNumber: "",
+  // Lascia stringa vuota per nascondere il recapito dal sito.
+  email: "diego.menetti.05@gmail.com",
+  phone: "+39 338 477 2858",
+  /** Numero WhatsApp in formato internazionale senza + e spazi; vuoto per nascondere */
+  whatsapp: "393384772858",
+  vatNumber: "04404051205",
+  address: "Castello di Serravalle, Valsamoggia (BO)",
   social: [] as { label: string; href: string }[],
 };
 

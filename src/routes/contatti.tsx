@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useState, type FormEvent } from "react";
 import { z } from "zod";
-import { CheckCircle2, Mail, Phone } from "lucide-react";
+import { CheckCircle2, Mail, MessageCircle, Phone } from "lucide-react";
 import { serviceOptions, site, type ServiceSlug } from "@/config/site";
 import { PageIntro } from "@/components/site/ui";
 import { contactSchema, submitContact } from "@/lib/contact.functions";
@@ -164,6 +164,7 @@ function Contatti() {
               <ul className="mt-4 space-y-3">
                 {site.email && <li><a href={`mailto:${site.email}`} className="inline-flex min-h-11 items-center gap-2 text-primary hover:underline"><Mail className="size-5" aria-hidden />{site.email}</a></li>}
                 {site.phone && <li><a href={`tel:${site.phone.replace(/\s/g, "")}`} className="inline-flex min-h-11 items-center gap-2 text-primary hover:underline"><Phone className="size-5" aria-hidden />{site.phone}</a></li>}
+                {site.whatsapp && <li><a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 text-primary hover:underline"><MessageCircle className="size-5" aria-hidden />Scrivimi su WhatsApp</a></li>}
               </ul>
             </div>
           )}
