@@ -10,33 +10,91 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ChiSonoRouteImport } from './routes/chi-sono'
+import { Route as ContattiRouteImport } from './routes/contatti'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ProgettiRouteImport } from './routes/progetti'
+import { Route as ServiziRouteImport } from './routes/servizi'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ChiSonoRoute = ChiSonoRouteImport.update({
+  id: '/chi-sono',
+  path: '/chi-sono',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContattiRoute = ContattiRouteImport.update({
+  id: '/contatti',
+  path: '/contatti',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgettiRoute = ProgettiRouteImport.update({
+  id: '/progetti',
+  path: '/progetti',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiziRoute = ServiziRouteImport.update({
+  id: '/servizi',
+  path: '/servizi',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/chi-sono': typeof ChiSonoRoute
+  '/contatti': typeof ContattiRoute
+  '/privacy': typeof PrivacyRoute
+  '/progetti': typeof ProgettiRoute
+  '/servizi': typeof ServiziRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/chi-sono': typeof ChiSonoRoute
+  '/contatti': typeof ContattiRoute
+  '/privacy': typeof PrivacyRoute
+  '/progetti': typeof ProgettiRoute
+  '/servizi': typeof ServiziRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/chi-sono': typeof ChiSonoRoute
+  '/contatti': typeof ContattiRoute
+  '/privacy': typeof PrivacyRoute
+  '/progetti': typeof ProgettiRoute
+  '/servizi': typeof ServiziRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/chi-sono' | '/contatti' | '/privacy' | '/progetti' | '/servizi'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/chi-sono' | '/contatti' | '/privacy' | '/progetti' | '/servizi'
+  id:
+    | '__root__'
+    | '/'
+    | '/chi-sono'
+    | '/contatti'
+    | '/privacy'
+    | '/progetti'
+    | '/servizi'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ChiSonoRoute: typeof ChiSonoRoute
+  ContattiRoute: typeof ContattiRoute
+  PrivacyRoute: typeof PrivacyRoute
+  ProgettiRoute: typeof ProgettiRoute
+  ServiziRoute: typeof ServiziRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +106,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/chi-sono': {
+      id: '/chi-sono'
+      path: '/chi-sono'
+      fullPath: '/chi-sono'
+      preLoaderRoute: typeof ChiSonoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contatti': {
+      id: '/contatti'
+      path: '/contatti'
+      fullPath: '/contatti'
+      preLoaderRoute: typeof ContattiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progetti': {
+      id: '/progetti'
+      path: '/progetti'
+      fullPath: '/progetti'
+      preLoaderRoute: typeof ProgettiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servizi': {
+      id: '/servizi'
+      path: '/servizi'
+      fullPath: '/servizi'
+      preLoaderRoute: typeof ServiziRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ChiSonoRoute: ChiSonoRoute,
+  ContattiRoute: ContattiRoute,
+  PrivacyRoute: PrivacyRoute,
+  ProgettiRoute: ProgettiRoute,
+  ServiziRoute: ServiziRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
