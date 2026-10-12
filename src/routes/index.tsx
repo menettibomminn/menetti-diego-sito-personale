@@ -58,7 +58,12 @@ function Home() {
           <ul className="mt-10 grid gap-5 md:grid-cols-2">
             {needs.map((n) => (
               <li key={n.slug} className="flex flex-col rounded-xl border bg-card p-6">
-                <n.icon className="size-6 text-primary" aria-hidden />
+                <div className="flex items-center gap-3">
+                  <n.icon className="size-6 shrink-0 text-primary" aria-hidden />
+                  <span className="text-sm font-semibold uppercase tracking-wider text-primary">
+                    {({ "siti-web": "Siti web", automazione: "Automazioni informatiche", software: "Custom software", consulenza: "Assistenza tecnica" } as Record<string, string>)[n.slug]}
+                  </span>
+                </div>
                 <h3 className="mt-4 text-xl font-semibold">{n.title}</h3>
                 <p className="mt-2 flex-1 text-muted-foreground">{n.text}</p>
                 <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2">
