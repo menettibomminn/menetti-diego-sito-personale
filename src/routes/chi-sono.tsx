@@ -18,8 +18,8 @@ export const Route = createFileRoute("/chi-sono")({
   component: ChiSono,
 });
 
-// DA COMPLETARE: imposta il percorso della tua foto professionale (es. import da src/assets).
-const photo: string | null = null;
+import photoAsset from "@/assets/diego-menetti.jpg.asset.json";
+const photo: string | null = photoAsset.url;
 
 const principles = [
   { t: "Prima capire, poi proporre", d: "Ogni intervento parte da una conversazione sul tuo lavoro, non da uno strumento da vendere." },
