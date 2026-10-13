@@ -8,7 +8,7 @@ export const site = {
   name: "Diego Menetti",
   role: "CONSULENZA INFORMATICA, SVILUPPO SOFTWARE, AUTOMAZIONE E SITI WEB.",
   tagline: "Soluzioni informatiche per lavorare meglio.",
-  area: "Bologna, Modena e dintorni, anche da remoto in tutta Italia",
+  area: "Bologna e Modena in presenza - tutta Italia da remoto.",
   // Lascia stringa vuota per nascondere il recapito dal sito.
   email: "diego.menetti.05@gmail.com",
   phone: "+39 338 477 2858",
