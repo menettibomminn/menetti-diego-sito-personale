@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
 });
 
 const needs: { icon: typeof Globe; title: string; text: string; slug: ServiceSlug; cta: string }[] = [
-  { icon: Globe, slug: "siti-web", title: "Voglio un sito web o migliorare quello che ho già.", text: "Per chi deve presentare la propria attività, mostrare servizi, ricevere richieste di contatto oppure aggiornare un sito esistente.", cta: "Parliamo del tuo sito" },
+  { icon: Globe, slug: "siti-web", title: "Voglio un sito web o migliorare quello che ho già.", text: "Per chi deve presentare la propria attività, mostrare servizi, ricevere richieste di contatto oppure aggiornare un sito esistente. Il tutto ad un prezzo assai vantaggioso. Mi occupo io di tutto: sito, hosting, dominio, ecc...", cta: "Parliamo del tuo sito" },
   { icon: Repeat, slug: "automazione", title: "Voglio semplificare attività ripetitive.", text: "Per chi perde tempo con operazioni manuali, inserimenti di dati, notifiche, report o passaggi ripetitivi fra diversi strumenti.", cta: "Analizziamo il tuo processo" },
   { icon: Puzzle, slug: "software", title: "Mi serve un software o collegare strumenti diversi.", text: "Per chi ha bisogno di uno strumento personalizzato o vuole fare comunicare applicazioni che utilizza già.", cta: "Descrivimi la tua esigenza" },
   { icon: LifeBuoy, slug: "consulenza", title: "Ho un problema informatico e non so come fare o quale soluzione scegliere.", text: "Per chi ha bisogno di consulenza per individuare un problema, valutare le alternative e pianificare una soluzione.", cta: "Chiedi un confronto" },
