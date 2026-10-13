@@ -6,9 +6,9 @@ import { CtaBand, PrimaryLink } from "@/components/site/ui";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Diego Menetti — Soluzioni informatiche per lavorare meglio" },
+      { title: "Menetti Diego — Soluzioni informatiche per lavorare meglio" },
       { name: "description", content: "Siti web, software su misura, automazione e consulenza informatica per imprese e professionisti tra Bologna, Modena e da remoto." },
-      { property: "og:title", content: "Diego Menetti — Soluzioni informatiche per lavorare meglio" },
+      { property: "og:title", content: "Menetti Diego — Soluzioni informatiche per lavorare meglio" },
       { property: "og:description", content: "Siti web, software, automazione e consulenza informatica per piccole imprese e professionisti." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

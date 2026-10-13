@@ -80,10 +80,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Diego Menetti — Consulenza informatica" },
+      { title: "Menetti Diego — Consulenza informatica" },
       { name: "description", content: "Consulenza informatica, sviluppo software e automazione per imprese e professionisti." },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Diego Menetti" },
+      { property: "og:site_name", content: "Menetti Diego" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

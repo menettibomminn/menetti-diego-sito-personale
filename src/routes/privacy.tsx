@@ -5,9 +5,9 @@ import { site } from "@/config/site";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy policy — Diego Menetti" },
+      { title: "Privacy policy — Menetti Diego" },
       { name: "description", content: "Informativa sul trattamento dei dati personali raccolti tramite il sito e il modulo di contatto." },
-      { property: "og:title", content: "Privacy policy — Diego Menetti" },
+      { property: "og:title", content: "Privacy policy — Menetti Diego" },
       { property: "og:description", content: "Informativa sul trattamento dei dati personali." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/privacy")({
 });
 
 const sections = [
-  { t: "Titolare del trattamento", d: `${site.name}, ${site.address}. P. IVA ${site.vatNumber}. Email: ${site.email} — Telefono: ${site.phone}.` },
+  { t: "Titolare del trattamento", d: `${site.personName}, ${site.address}. P. IVA ${site.vatNumber}. Email: ${site.email} — Telefono: ${site.phone}.` },
   { t: "Dati raccolti", d: "Tramite il modulo di contatto: nome, azienda (facoltativa), email, servizio di interesse, testo del messaggio ed eventuale preferenza di contatto. Se mi scrivi via email, telefono o WhatsApp tratto i dati che mi comunichi in quel canale." },
   { t: "Finalità e base giuridica", d: "Rispondere alla tua richiesta e fornirti informazioni o preventivi prima di un eventuale incarico. La base giuridica è l'esecuzione di misure precontrattuali adottate su tua richiesta (art. 6, par. 1, lett. b del Regolamento UE 2016/679 - GDPR)." },
   { t: "Natura del conferimento", d: "Nome, email e messaggio sono necessari per poterti rispondere. Senza questi dati non è possibile dare seguito alla richiesta." },
