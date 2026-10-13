@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { site } from "@/config/site";
+import logo from "@/assets/logo-md.png";
 
 export const navItems = [
   { to: "/", label: "Home" },
@@ -19,7 +20,8 @@ export function Header() {
         Vai al contenuto
       </a>
       <div className="container-page flex h-16 items-center justify-between gap-4">
-        <Link to="/" className="font-display text-lg font-semibold text-foreground" onClick={() => setOpen(false)}>
+        <Link to="/" className="flex items-center gap-2.5 font-display text-lg font-semibold text-foreground" onClick={() => setOpen(false)}>
+          <img src={logo} alt="" width={49} height={30} className="h-[30px] w-auto" />
           {site.name}
         </Link>
         <nav aria-label="Principale" className="hidden md:block">
