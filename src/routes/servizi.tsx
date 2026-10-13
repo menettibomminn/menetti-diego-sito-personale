@@ -6,9 +6,9 @@ import { CtaBand, PageIntro, PrimaryLink } from "@/components/site/ui";
 export const Route = createFileRoute("/servizi")({
   head: () => ({
     meta: [
-      { title: "Servizi — Siti web, automazione, software e consulenza | Diego Menetti" },
+      { title: "Servizi — Siti web, automazione, software e consulenza | Menetti Diego" },
       { name: "description", content: "Siti web, automazione dei processi, software su misura e consulenza informatica per piccole e medie imprese, spiegati con esempi concreti." },
-      { property: "og:title", content: "Servizi — Diego Menetti" },
+      { property: "og:title", content: "Servizi — Menetti Diego" },
       { property: "og:description", content: "Quattro aree di lavoro, spiegate partendo dai problemi reali di imprese e professionisti." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

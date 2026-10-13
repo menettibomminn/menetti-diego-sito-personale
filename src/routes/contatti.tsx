@@ -15,9 +15,9 @@ export const Route = createFileRoute("/contatti")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Contatti — Raccontami cosa vuoi migliorare | Diego Menetti" },
+      { title: "Contatti — Raccontami cosa vuoi migliorare | Menetti Diego" },
       { name: "description", content: "Descrivi la tua necessità con parole tue: non serve sapere già quale servizio scegliere. Bologna, Modena e da remoto." },
-      { property: "og:title", content: "Contatti — Diego Menetti" },
+      { property: "og:title", content: "Contatti — Menetti Diego" },
       { property: "og:description", content: "Raccontami cosa vuoi migliorare nella tua attività." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -5,7 +5,9 @@
  */
 
 export const site = {
-  name: "Diego Menetti",
+  name: "Menetti Diego",
+  /** Nome della persona (usato dove serve il nome personale) */
+  personName: "Diego Menetti",
   role: "CONSULENZA INFORMATICA, SVILUPPO SOFTWARE, AUTOMAZIONE E SITI WEB.",
   tagline: "Soluzioni informatiche per lavorare meglio.",
   area: "Bologna e Modena in presenza - tutta Italia da remoto.",

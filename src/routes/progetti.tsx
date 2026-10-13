@@ -6,9 +6,9 @@ import { CtaBand, PageIntro } from "@/components/site/ui";
 export const Route = createFileRoute("/progetti")({
   head: () => ({
     meta: [
-      { title: "Progetti — Diego Menetti" },
+      { title: "Progetti — Menetti Diego" },
       { name: "description", content: "Una selezione di lavori realizzati: esigenza iniziale, soluzione e tipologia di intervento." },
-      { property: "og:title", content: "Progetti — Diego Menetti" },
+      { property: "og:title", content: "Progetti — Menetti Diego" },
       { property: "og:description", content: "Lavori realizzati per imprese e professionisti, pubblicati con autorizzazione." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
