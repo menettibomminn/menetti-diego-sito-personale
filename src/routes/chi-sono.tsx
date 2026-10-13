@@ -23,7 +23,7 @@ const photo: string | null = photoAsset.url;
 
 const principles = [
   { t: "Prima capire, poi proporre", d: "Ogni intervento parte da una conversazione sul tuo lavoro, non da uno strumento da vendere." },
-  { t: "Soluzioni proporzionate", d: "Se basta una soluzione semplice o un programma già esistente, te lo dico. Sviluppo su misura solo quando serve davvero." },
+  { t: "Soluzioni proporzionate", d: "Se basta una soluzione semplice o un programma già esistente, te lo dico. Sviluppo su misura solo quando serve e se ha un valore reale per te." },
   { t: "Chiarezza", d: "Spiego cosa faccio, quanto costa e quali sono i limiti, con parole comprensibili anche a chi non è del settore." },
   { t: "Un unico referente", d: "Parli direttamente con chi realizza il lavoro, senza passaggi intermedi." },
 ];
