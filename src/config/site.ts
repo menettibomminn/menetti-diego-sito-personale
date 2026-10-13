@@ -13,6 +13,7 @@ export const site = {
   area: "Bologna e Modena in presenza - tutta Italia da remoto.",
   // Lascia stringa vuota per nascondere il recapito dal sito.
   email: "diego.menetti.05@gmail.com",
+  pec: "diego.menetti@pec.it",
   phone: "+39 338 477 2858",
   /** Numero WhatsApp in formato internazionale senza + e spazi; vuoto per nascondere */
   whatsapp: "393384772858",

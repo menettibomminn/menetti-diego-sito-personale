@@ -25,6 +25,7 @@ export function Footer() {
           <p className="text-sm font-semibold">Contatti</p>
           <ul className="mt-3 space-y-2 text-sm">
             {site.email && <li><a className="opacity-80 hover:underline" href={`mailto:${site.email}`}>{site.email}</a></li>}
+            {site.pec && <li><a className="opacity-80 hover:underline" href={`mailto:${site.pec}`}>PEC: {site.pec}</a></li>}
             {site.phone && <li><a className="opacity-80 hover:underline" href={`tel:${site.phone.replace(/\s/g, "")}`}>{site.phone}</a></li>}
             {site.whatsapp && <li><a className="opacity-80 hover:underline" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener noreferrer">Scrivimi su WhatsApp</a></li>}
             <li><Link to="/contatti" className="opacity-80 hover:underline">Modulo di contatto</Link></li>
