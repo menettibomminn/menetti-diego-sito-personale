@@ -6,7 +6,7 @@
 
 export const site = {
   name: "Diego Menetti",
-  role: "Consulenza informatica, sviluppo software e automazione",
+  role: "CONSULENZA INFORMATICA, SVILUPPO SOFTWARE, AUTOMAZIONE E SITI WEB.",
   tagline: "Soluzioni informatiche per lavorare meglio.",
   area: "Bologna, Modena e dintorni, anche da remoto in tutta Italia",
   // Lascia stringa vuota per nascondere il recapito dal sito.
