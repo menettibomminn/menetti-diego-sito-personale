@@ -21,7 +21,7 @@ export const Route = createFileRoute("/progetti")({
 function Progetti() {
   return (
     <>
-      <PageIntro eyebrow="Progetti" title="Lavori realizzati">
+      <PageIntro eyebrow="Progetti" title="Alcuni lavori realizzati">
         Per ogni progetto trovi l'esigenza di partenza e la soluzione adottata. Pubblico solo lavori per cui ho l'autorizzazione del cliente.
       </PageIntro>
       <section className="container-page py-16">
