@@ -154,6 +154,8 @@ export type Project = {
   tech?: string[];
   image?: string;
   imageAlt?: string;
+  /** posizione dell'immagine nel riquadro, es. "top" */
+  imagePosition?: "top" | "center";
   url?: string;
 };
 
@@ -178,6 +180,7 @@ export const projects: Project[] = [
     solution:
       "Sito web vetrina per una azienda agricola situata a Savigno (BO), visualizzabile comodamente da PC, tablet e cellulare. Sito che valorizza l'azienda e rende accessibile il contatto tramite form Google e recapiti facili da trovare.\nOvviamente hosting, dominio e sicurezza sono stati compresi nel progetto da me svolto.",
     image: ipraImg.url,
+    imagePosition: "top",
     imageAlt: "Homepage del sito dell'Azienda Agricola I-Prà Savigno",
   },
 ];
