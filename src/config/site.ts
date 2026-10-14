@@ -1,3 +1,6 @@
+import pricefinderImg from "@/assets/pricefinder.jpg.asset.json";
+import ipraImg from "@/assets/ipra-savigno.png.asset.json";
+
 /**
  * CONFIGURAZIONE CENTRALE DEL SITO
  * Modifica qui recapiti, dati professionali, servizi e progetti.
@@ -160,11 +163,22 @@ export type Project = {
  */
 export const projects: Project[] = [
   {
-    placeholder: true,
-    name: "Esempio — Sito per attività locale",
+    name: "PriceFinder - strumento di ricerca",
+    type: "Software su misura",
+    need: "",
+    solution:
+      "Un piccolo tool costruito e pensato per quelle aziende, in questo caso edile, che devono produrre centinaia di preventivi sempre diversi e hanno bisogno di visualizzare vecchie voci di preventivi per stabilire un prezzo. La ricerca di parole per lettere e campo semantico permette di ottenere le righe dei preventivi senza sfogliarli tutti a mano.",
+    image: pricefinderImg.url,
+    imageAlt: "Schermata di PriceFinder con i risultati di ricerca tra le voci dei preventivi",
+  },
+  {
+    name: "Sito web I-Prà Savigno",
     type: "Sito web",
-    need: "DA COMPLETARE: descrivi l'esigenza iniziale del cliente.",
-    solution: "DA COMPLETARE: descrivi la soluzione realizzata.",
+    need: "",
+    solution:
+      "Sito web vetrina per una azienda agricola situata a Savigno (BO), visualizzabile comodamente da PC, tablet e cellulare. Sito che valorizza l'azienda e rende accessibile il contatto tramite form Google e recapiti facili da trovare.\nOvviamente hosting, dominio e sicurezza sono stati compresi nel progetto da me svolto.",
+    image: ipraImg.url,
+    imageAlt: "Homepage del sito dell'Azienda Agricola I-Prà Savigno",
   },
 ];
 
