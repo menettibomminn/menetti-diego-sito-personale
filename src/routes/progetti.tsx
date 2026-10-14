@@ -37,8 +37,10 @@ function Progetti() {
             {publishedProjects.map((p, i) => (
               <li key={p.name} className="grid overflow-hidden rounded-xl border bg-card md:grid-cols-2 md:items-center">
                 {p.image && (
-                  <div className={`aspect-video bg-muted ${i % 2 === 1 ? "md:order-2" : ""}`}>
-                    <img src={p.image} alt={p.imageAlt ?? ""} loading="lazy" className="size-full object-cover object-top" />
+                  <div className={`p-4 md:py-6 ${i % 2 === 1 ? "md:order-2 md:pl-0 md:pr-6" : "md:pl-6 md:pr-0"}`}>
+                    <div className="aspect-video overflow-hidden rounded-lg bg-muted">
+                      <img src={p.image} alt={p.imageAlt ?? ""} loading="lazy" className="size-full object-cover object-top" />
+                    </div>
                   </div>
                 )}
                 <div className="p-6 md:p-10">
