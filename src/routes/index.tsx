@@ -131,7 +131,7 @@ function Home() {
                 <li key={p.name} className="rounded-xl border bg-card p-5">
                   <p className="text-sm text-primary">{p.type}</p>
                   <h3 className="mt-1 text-lg font-semibold">{p.name}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{p.need}</p>
+                  <p className="mt-2 line-clamp-3 text-sm text-muted-foreground">{p.need || p.solution}</p>
                 </li>
               ))}
             </ul>

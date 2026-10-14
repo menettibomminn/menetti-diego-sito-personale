@@ -33,21 +33,19 @@ function Progetti() {
             </p>
           </div>
         ) : (
-          <ul className="grid gap-8 md:grid-cols-2">
-            {publishedProjects.map((p) => (
-              <li key={p.name} className="overflow-hidden rounded-xl border bg-card">
+          <ul className="space-y-10">
+            {publishedProjects.map((p, i) => (
+              <li key={p.name} className="grid overflow-hidden rounded-xl border bg-card md:grid-cols-2 md:items-center">
                 {p.image && (
-                  <div className="aspect-video bg-muted">
+                  <div className={`aspect-video bg-muted ${i % 2 === 1 ? "md:order-2" : ""}`}>
                     <img src={p.image} alt={p.imageAlt ?? ""} loading="lazy" className="size-full object-cover" />
                   </div>
                 )}
-                <div className="p-6">
+                <div className="p-6 md:p-10">
                   <p className="text-sm font-medium text-primary">{p.type}</p>
-                  <h2 className="mt-1 text-xl font-semibold">{p.name}</h2>
-                  <h3 className="mt-4 text-sm font-semibold">Esigenza iniziale</h3>
-                  <p className="text-muted-foreground">{p.need}</p>
-                  <h3 className="mt-3 text-sm font-semibold">Soluzione</h3>
-                  <p className="text-muted-foreground">{p.solution}</p>
+                  <h2 className="mt-1 text-2xl font-semibold">{p.name}</h2>
+                  {p.need && <p className="mt-4 text-muted-foreground">{p.need}</p>}
+                  <p className="mt-4 whitespace-pre-line text-muted-foreground">{p.solution}</p>
                   {p.tech && <p className="mt-3 text-sm text-muted-foreground">Tecnologie: {p.tech.join(", ")}</p>}
                   {p.url && (
                     <a href={p.url} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:underline">
