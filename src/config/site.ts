@@ -172,7 +172,7 @@ export const projects: Project[] = [
     imageAlt: "Schermata di PriceFinder con i risultati di ricerca tra le voci dei preventivi",
   },
   {
-    name: "Sito web I-Prà Savigno",
+    name: "Sito web I-Prá Savigno",
     type: "Sito web",
     need: "",
     solution:
