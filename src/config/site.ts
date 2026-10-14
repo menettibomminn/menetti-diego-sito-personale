@@ -176,7 +176,7 @@ export const projects: Project[] = [
     type: "Sito web",
     need: "",
     solution:
-      "Sito web vetrina per una azienda agricola situata a Savigno (BO), visualizzabile comodamente da PC, tablet e cellulare. Sito che valorizza l'azienda e rende accessibile il contatto tramite form Google e recapiti facili da trovare.\nOvviamente hosting, dominio e sicurezza sono stati compresi nel progetto da me svolto.",
+      "Sito web vetrina per una azienda agricola situata a Savigno (BO), visualizzabile comodamente da PC, tablet e cellulare. Sito che valorizza l'azienda e rende accessibile il contatto tra le parti tramite form Google e recapiti facili da trovare.\nOvviamente hosting, dominio e sicurezza sono stati compresi nel progetto da me svolto.",
     image: ipraImg.url,
     imageAlt: "Homepage del sito dell'Azienda Agricola I-Prà Savigno",
   },
