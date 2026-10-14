@@ -35,13 +35,13 @@ function Progetti() {
         ) : (
           <ul className="space-y-10">
             {publishedProjects.map((p, i) => (
-              <li key={p.name} className="grid overflow-hidden rounded-xl border bg-card md:grid-cols-5 md:items-center">
+              <li key={p.name} className="grid overflow-hidden rounded-xl border bg-card md:grid-cols-2 md:items-center">
                 {p.image && (
-                  <div className={`aspect-[4/3] bg-muted md:col-span-3 ${i % 2 === 1 ? "md:order-2" : ""}`}>
-                    <img src={p.image} alt={p.imageAlt ?? ""} loading="lazy" className={`size-full object-cover ${p.imagePosition === "top" ? "object-top" : "object-center"}`} />
+                  <div className={`aspect-video bg-muted ${i % 2 === 1 ? "md:order-2" : ""}`}>
+                    <img src={p.image} alt={p.imageAlt ?? ""} loading="lazy" className="size-full object-cover" />
                   </div>
                 )}
-                <div className="p-6 md:col-span-2 md:p-8">
+                <div className="p-6 md:p-10">
                   <p className="text-sm font-medium text-primary">{p.type}</p>
                   <h2 className="mt-1 text-2xl font-semibold">{p.name}</h2>
                   {p.need && <p className="mt-4 text-muted-foreground">{p.need}</p>}
