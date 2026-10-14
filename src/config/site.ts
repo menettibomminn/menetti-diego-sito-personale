@@ -1,4 +1,4 @@
-import pricefinderImg from "@/assets/pricefinder.jpg.asset.json";
+import pricefinderImg from "@/assets/pricefinder-v2.jpg.asset.json";
 import ipraImg from "@/assets/ipra-savigno.png.asset.json";
 
 /**
