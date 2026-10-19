@@ -10,4 +10,6 @@
 <!-- LOVABLE:END -->
 
 - Site content (contacts, services, portfolio) lives in src/config/site.ts — single place for the owner to edit.
-- Contact form saves via a server function into the contact_submissions table (server-only access, no public read).
+- The contact page opens the Google Forms URL from site configuration; the legacy contact server function is not used by this page.
+- External builds use Nitro's node_server preset and run .output/server/index.mjs; the managed Lovable target remains unchanged to preserve preview compatibility.
+- VPS deployment uses a multi-stage Docker image and an optional Caddy reverse proxy; credentials and local environment files must never enter the image.

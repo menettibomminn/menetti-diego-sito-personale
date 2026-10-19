@@ -1,0 +1,13 @@
+.git
+node_modules
+.output
+.nitro
+dist
+.vinxi
+.tanstack
+.env
+.env.*
+!.env.vps.example
+.lovable
+coverage
+*.log

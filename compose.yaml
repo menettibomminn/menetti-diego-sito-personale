@@ -1,0 +1,32 @@
+services:
+  site:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: "3000"
+    init: true
+    security_opt:
+      - no-new-privileges:true
+
+  proxy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    profiles: [https]
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      SITE_DOMAIN: ${SITE_DOMAIN:?Imposta SITE_DOMAIN nel file .env.vps}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
