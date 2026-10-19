@@ -21,7 +21,7 @@ services:
       - "443:443"
       - "443:443/udp"
     environment:
-      SITE_DOMAIN: ${SITE_DOMAIN:?Imposta SITE_DOMAIN nel file .env.vps}
+      SITE_DOMAIN: ${SITE_DOMAIN:?Imposta SITE_DOMAIN nel file deploy/site.env}
     volumes:
       - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data

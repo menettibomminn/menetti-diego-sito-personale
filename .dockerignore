@@ -10,4 +10,5 @@ dist
 !.env.vps.example
 .lovable
 coverage
+public/__l5e
 *.log
