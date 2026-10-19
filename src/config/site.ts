@@ -23,6 +23,9 @@ export const site = {
   vatNumber: "04404051205",
   address: "Castello di Serravalle, Valsamoggia (BO)",
   social: [] as { label: string; href: string }[],
+  /** Link al modulo Google usato nella pagina Contatti */
+  contactFormUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLSfok7B7ohBTCdSbSWAkfmouZaS8vuumkS-QcRNvP6KPA3lvKw/viewform?usp=publish-editor",
 };
 
 export type ServiceSlug = "siti-web" | "automazione" | "software" | "consulenza" | "non-so";
