@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "prepare:vps-assets": "node scripts/prepare-vps-assets.mjs",
+    "build:vps": "bun run prepare:vps-assets && vite build --mode vps",
+    "start": "node .output/server/index.mjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",

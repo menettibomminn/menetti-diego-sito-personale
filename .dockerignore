@@ -1,0 +1,15 @@
+.git
+node_modules
+.output
+.nitro
+dist
+.vinxi
+.tanstack
+.env
+.env.*
+deploy/*.env
+!.env.vps.example
+.lovable
+coverage
+public/__l5e
+*.log
