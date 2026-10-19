@@ -36,7 +36,7 @@ function Contatti() {
         <div className="rounded-xl border bg-card p-8">
           <h2 className="text-2xl font-semibold">Compila il modulo di richiesta</h2>
           <p className="mt-3 text-muted-foreground">
-            Bastano pochi minuti: indica chi sei, come ricontattarti e di cosa hai bisogno. Il modulo si apre in una nuova scheda.
+            Bastano pochi minuti: indica chi sei e di cosa hai bisogno. Il modulo si apre in una nuova scheda.
           </p>
           <a
             href={site.contactFormUrl}
