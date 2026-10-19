@@ -49,7 +49,7 @@ function ChiSono() {
           <p className="text-muted-foreground">
             Il mio lavoro consiste nel comprendere le tue esigenze, valutare le soluzioni possibili e realizzare interventi proporzionati al problema: un sito chiaro, un'automazione che elimina un passaggio ripetitivo, uno strumento su misura o semplicemente un consiglio su cosa scegliere.
           </p>
-          <p className="text-muted-foreground">Opero principalmente tra Bologna e Modena in presenza, e collaboro anche da remoto in tutta Italia.</p>
+          <p className="text-muted-foreground">Opero principalmente tra Bologna e Modena in presenza, e collaboro da remoto in tutta Italia.</p>
           <h2 className="pt-6 text-2xl font-semibold">Come mi piace lavorare</h2>
           <ul className="grid gap-6 sm:grid-cols-2">
             {principles.map((p) => (
