@@ -1,5 +1,17 @@
 # Menetti Diego - sito personale
 
+## Hosting su VPS esterno
+
+Il progetto supporta un server Node.js autonomo e una distribuzione Docker con
+HTTPS opzionale. Le istruzioni complete sono in [deploy/VPS.md](deploy/VPS.md).
+La pagina Contatti usa Google Moduli, non il vecchio modulo interno descritto nel brief storico qui sotto.
+
+```sh
+bun install --frozen-lockfile
+bun run build:vps
+bun run start
+```
+
 # Progetto sito web professionale — Diego Menetti | Consulenza informatica
 
 Agisci come un **senior web designer, UX/UI designer, copywriter specializzato in servizi B2B e sviluppatore web**. Progetta e realizza un sito web professionale completo per la mia attività freelance.
