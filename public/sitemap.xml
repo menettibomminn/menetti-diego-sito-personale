@@ -5,19 +5,19 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://tuosito.itservizi</loc>
+    <loc>https://menettidiego.it/servizi</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://tuosito.itprogetti</loc>
+    <loc>https://menettidiego.it/progetti</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://tuosito.itchi-sono</loc>
+    <loc>https://menettidiego.it/chi-sono</loc>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://tuosito.itcontatti</loc>
+    <loc>https://menettidiego.it/contatti</loc>
     <priority>0.70</priority>
   </url>
 </urlset>
