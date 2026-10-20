@@ -192,7 +192,7 @@ export const projects: Project[] = [
     type: "Automazione e intelligenza artificiale",
     need: "",
     solution:
-      "Monitora una cartella Google Drive per nuovi file, estrae automaticamente i dati dalle fatture in formato PDF tramite Intelligenza Artificiale (OpenAI), registra le informazioni in Google Sheets e invia un riepilogo via email al team di contabilità. Lo strumento utilizzato è n8n.",
+      "Monitora una cartella Google Drive per nuovi file, estrae automaticamente i dati dalle fatture in formato PDF tramite Intelligenza Artificiale (OpenAI), registra le informazioni in Google Sheets e invia un riepilogo via email al team di contabilità.",
     image: automazioneImg.url,
     imageAlt: "Schema del flusso di automazione per la lettura delle fatture",
   },
