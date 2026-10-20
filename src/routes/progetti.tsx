@@ -39,7 +39,7 @@ function Progetti() {
                 {p.image && (
                   <div className={`p-4 md:py-6 ${i % 2 === 1 ? "md:order-2 md:pl-0 md:pr-6" : "md:pl-6 md:pr-0"}`}>
                     <div className="aspect-video overflow-hidden rounded-lg bg-muted">
-                      <img src={p.image} alt={p.imageAlt ?? ""} loading="lazy" className={`size-full object-cover ${p.name.startsWith("PriceFinder") ? "object-center" : "object-top"}`} />
+                      <img src={p.image} alt={p.imageAlt ?? ""} loading="lazy" className={`size-full object-cover ${p.imageTop ? "object-top" : "object-center"}`} />
                     </div>
                   </div>
                 )}
