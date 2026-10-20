@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  <url>
+    <loc>https://menettidiego.it/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://tuosito.itservizi</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tuosito.itprogetti</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tuosito.itchi-sono</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tuosito.itcontatti</loc>
+    <priority>0.70</priority>
+  </url>
+</urlset>
