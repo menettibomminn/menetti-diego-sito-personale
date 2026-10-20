@@ -1,5 +1,6 @@
 import pricefinderImg from "@/assets/pricefinder.jpg.asset.json";
 import ipraImg from "@/assets/ipra-savigno.png.asset.json";
+import automazioneImg from "@/assets/automazione-n8n.jpg.asset.json";
 
 /**
  * CONFIGURAZIONE CENTRALE DEL SITO
@@ -157,6 +158,8 @@ export type Project = {
   tech?: string[];
   image?: string;
   imageAlt?: string;
+  /** true = mostra la parte alta dell'immagine (taglia sotto); altrimenti centrata */
+  imageTop?: boolean;
   url?: string;
 };
 
@@ -182,6 +185,16 @@ export const projects: Project[] = [
       "Sito web vetrina per una azienda agricola situata a Savigno (BO), visualizzabile comodamente da PC, tablet e cellulare. Sito che valorizza l'azienda e rende accessibile il contatto tra le parti tramite form Google e recapiti facili da trovare.\nOvviamente hosting, dominio e sicurezza sono stati compresi nel progetto da me svolto.",
     image: ipraImg.url,
     imageAlt: "Homepage del sito dell'Azienda Agricola I-Prà Savigno",
+    imageTop: true,
+  },
+  {
+    name: "Automazione aziendale semplice",
+    type: "Automazione e intelligenza artificiale",
+    need: "",
+    solution:
+      "Monitora una cartella Google Drive per nuovi file, estrae automaticamente i dati dalle fatture in formato PDF tramite Intelligenza Artificiale (OpenAI), registra le informazioni in Google Sheets e invia un riepilogo via email al team di contabilità.",
+    image: automazioneImg.url,
+    imageAlt: "Schema del flusso di automazione per la lettura delle fatture",
   },
 ];
 
