@@ -1,9 +1,13 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { MessageCircle, Phone } from "lucide-react";
 import { site } from "@/config/site";
 
 export function MobileContactBar() {
+  const { pathname } = useLocation();
+  if (pathname.startsWith("/contatti")) return null;
   return (
+    <>
+    <div aria-hidden="true" className="h-[4.5rem] md:hidden" />
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden">
       <div className="flex gap-2">
         <a
@@ -30,5 +34,6 @@ export function MobileContactBar() {
         </Link>
       </div>
     </div>
+    </>
   );
 }
