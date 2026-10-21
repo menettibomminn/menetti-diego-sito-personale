@@ -14,6 +14,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { MobileContactBar } from "@/components/site/MobileContactBar";
 
 function NotFoundComponent() {
   return (
@@ -119,12 +120,13 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col pb-[4.5rem] md:pb-0">
         <Header />
         <main id="contenuto" className="flex-1">
           <Outlet />
         </main>
         <Footer />
+        <MobileContactBar />
       </div>
     </QueryClientProvider>
   );
