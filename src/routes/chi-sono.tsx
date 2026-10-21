@@ -6,10 +6,10 @@ import { site } from "@/config/site";
 export const Route = createFileRoute("/chi-sono")({
   head: () => ({
     meta: [
-      { title: "Chi sono — Diego Menetti, consulente informatico freelance" },
-      { name: "description", content: "Consulente informatico e sviluppatore freelance: capisco le esigenze, valuto le alternative e realizzo interventi proporzionati al problema." },
+      { title: "Chi sono — Diego Menetti, consulente informatico a Bologna" },
+      { name: "description", content: "Consulente informatico e sviluppatore freelance tra Bologna e Modena: come lavoro, cosa faccio e perché preferisco soluzioni semplici e proporzionate." },
       { property: "og:title", content: "Chi sono — Diego Menetti" },
-      { property: "og:description", content: "Un approccio pratico e personale alla tecnologia per imprese e professionisti." },
+      { property: "og:description", content: "Un consulente informatico freelance con un approccio pratico: prima capire, poi proporre." },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -44,10 +44,10 @@ function ChiSono() {
         </div>
         <div className="max-w-2xl space-y-5 text-lg">
           <p>
-            Mi occupo di consulenza informatica, sviluppo software e automazione. Lavoro con piccole e medie imprese, artigiani, attività locali e professionisti che vogliono usare meglio la tecnologia nel lavoro di tutti i giorni.
+            Mi occupo di consulenza informatica, automazione dei processi e sviluppo software. Lavoro con piccole e medie imprese, artigiani, attività locali e professionisti che vogliono usare meglio la tecnologia nel lavoro di tutti i giorni.
           </p>
           <p className="text-muted-foreground">
-            Il mio lavoro consiste nel comprendere le tue esigenze, valutare le soluzioni possibili e realizzare interventi proporzionati al problema: un sito chiaro, un'automazione che elimina un passaggio ripetitivo, uno strumento su misura o semplicemente un consiglio su cosa scegliere.
+            In pratica cerco di capire dove si perde tempo e cosa si può semplificare. A volte la risposta è un'automazione che elimina un passaggio ripetitivo, altre volte un collegamento tra due programmi, uno strumento su misura o un sito più chiaro. A volte è solo un consiglio su cosa scegliere.
           </p>
           <p className="text-muted-foreground">Opero principalmente tra Bologna e Modena in presenza, e collaboro da remoto in tutta Italia.</p>
           <h2 className="pt-6 text-2xl font-semibold">Come mi piace lavorare</h2>

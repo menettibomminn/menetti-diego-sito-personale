@@ -6,10 +6,10 @@ import { CtaBand, PageIntro } from "@/components/site/ui";
 export const Route = createFileRoute("/progetti")({
   head: () => ({
     meta: [
-      { title: "Progetti — Menetti Diego" },
-      { name: "description", content: "Una selezione di lavori realizzati: esigenza iniziale, soluzione e tipologia di intervento." },
-      { property: "og:title", content: "Progetti — Menetti Diego" },
-      { property: "og:description", content: "Lavori realizzati per imprese e professionisti, pubblicati con autorizzazione." },
+      { title: "Progetti: automazioni, software su misura e siti web | Menetti Diego" },
+      { name: "description", content: "Progetti reali: un'automazione che legge fatture PDF e le registra in Google Sheets, uno strumento di ricerca nei preventivi e un sito web per un'azienda agricola." },
+      { property: "og:title", content: "Progetti realizzati — Menetti Diego" },
+      { property: "og:description", content: "Problema di partenza, soluzione e strumenti usati in alcuni lavori reali." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -22,7 +22,7 @@ function Progetti() {
   return (
     <>
       <PageIntro eyebrow="Progetti" title="Alcuni lavori realizzati">
-        Per ogni progetto trovi l'esigenza di partenza e la soluzione adottata. Pubblico solo lavori per cui ho l'autorizzazione del cliente.
+        Per ogni progetto trovi il problema di partenza, cosa ho realizzato e gli strumenti usati. Pubblico solo lavori per cui ho l'autorizzazione del cliente.
       </PageIntro>
       <section className="container-page py-16">
         {publishedProjects.length === 0 ? (
@@ -60,7 +60,7 @@ function Progetti() {
           </ul>
         )}
       </section>
-      <CtaBand title="Hai un'esigenza simile?" text="Raccontami di cosa ti occupi e cosa vorresti migliorare." />
+      <CtaBand title="Hai un'esigenza simile?" text="Raccontami come gestisci oggi quel lavoro: valutiamo insieme se si può semplificare." cta="Raccontami il tuo caso" />
     </>
   );
 }
