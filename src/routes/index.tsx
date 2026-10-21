@@ -37,9 +37,9 @@ function Home() {
       <section className="border-b">
         <div className="container-page py-16 md:py-24">
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">{site.role}</p>
-          <h1 className="mt-3 max-w-3xl text-4xl font-semibold md:text-6xl">Automazioni aziendali e software che lavorano insieme.</h1>
+          <h1 className="mt-3 max-w-3xl text-4xl font-semibold md:text-6xl">Soluzioni informatiche e assistenza per PMI.</h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Sono Diego, consulente informatico freelance. Aiuto piccole e medie imprese a ridurre il lavoro manuale: automatizzo le attività ripetitive, collego i programmi che usano già e, quando serve, realizzo siti web o strumenti su misura.
+            Sono Diego, consulente informatico freelance. Aiuto piccole e medie imprese a ridurre il lavoro manuale: automatizzo processi aziendali ripetitivi, collego i programmi che usano già e, quando serve, realizzo siti web o strumenti su misura.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <PrimaryLink servizio="automazione">Descrivimi un processo che ti fa perdere tempo</PrimaryLink>
