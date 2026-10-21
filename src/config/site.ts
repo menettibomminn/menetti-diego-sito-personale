@@ -81,7 +81,7 @@ export const services: Service[] = [
     title: "Automazione e intelligenza artificiale",
     short: "Meno lavoro manuale e ripetitivo, con strumenti adatti al tuo modo di lavorare.",
     intro:
-      "Analizzo le attività ripetitive e valuto come automatizzarle. Propongo l'intelligenza artificiale solo quando porta un vantaggio concreto, non come soluzione universale.",
+      "Analizzo le attività ripetitive e i processi aziendali, e valuto come automatizzarle. Propongo l'intelligenza artificiale solo quando porta un vantaggio concreto e tangibile, non come soluzione universale.",
     forWho:
       "Chi perde tempo copiando dati fra programmi, inviando notifiche a mano o preparando sempre gli stessi report.",
     problems: [
