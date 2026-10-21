@@ -169,16 +169,6 @@ export type Project = {
  */
 export const projects: Project[] = [
   {
-    name: "Automazione aziendale semplice",
-    type: "Automazione e intelligenza artificiale",
-    need: "Il problema: le fatture in PDF arrivano in una cartella e qualcuno deve aprirle una per una, copiare i dati in un foglio di calcolo e avvisare la contabilità.",
-    solution:
-      "Monitora una cartella Google Drive per nuovi file, estrae automaticamente i dati dalle fatture in formato PDF tramite Intelligenza Artificiale (OpenAI), registra le informazioni in Google Sheets e invia un riepilogo via email al team di contabilità.\nIn pratica: si carica la fattura nella cartella e il resto avviene da solo, senza trascrizioni a mano.",
-    tech: ["Google Drive", "OpenAI", "Google Sheets", "Gmail"],
-    image: automazioneImg.url,
-    imageAlt: "Schema del flusso di automazione: cartella Google Drive, lettura della fattura con AI, registrazione in Google Sheets, email alla contabilità",
-  },
-  {
     name: "PriceFinder - strumento di ricerca",
     type: "Software su misura",
     need: "Il problema: un'impresa edile prepara centinaia di preventivi sempre diversi e, per stabilire un prezzo, deve ritrovare voci simili in quelli vecchi.",
@@ -196,6 +186,16 @@ export const projects: Project[] = [
     image: ipraImg.url,
     imageAlt: "Homepage del sito dell'Azienda Agricola I-Prá Savigno",
     imageTop: true,
+  },
+  {
+    name: "Automazione aziendale semplice",
+    type: "Automazione e intelligenza artificiale",
+    need: "Il problema: le fatture in PDF arrivano in una cartella e qualcuno deve aprirle una per una, copiare i dati in un foglio di calcolo e avvisare la contabilità.",
+    solution:
+      "Monitora una cartella Google Drive per nuovi file, estrae automaticamente i dati dalle fatture in formato PDF tramite Intelligenza Artificiale (OpenAI), registra le informazioni in Google Sheets e invia un riepilogo via email al team di contabilità.\nIn pratica: si carica la fattura nella cartella e il resto avviene da solo, senza trascrizioni a mano.",
+    tech: ["Google Drive", "OpenAI", "Google Sheets", "Gmail"],
+    image: automazioneImg.url,
+    imageAlt: "Schema del flusso di automazione: cartella Google Drive, lettura della fattura con AI, registrazione in Google Sheets, email alla contabilità",
   },
 ];
 
