@@ -12,8 +12,8 @@ export const Route = createFileRoute("/contatti")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Contatti — Raccontami cosa vuoi migliorare | Menetti Diego" },
-      { name: "description", content: "Descrivi la tua necessità con parole tue: non serve sapere già quale servizio scegliere. Bologna, Modena e da remoto." },
+      { title: "Contatti — Consulente informatico Bologna e Modena | Menetti Diego" },
+      { name: "description", content: "Descrivi con parole tue l'attività che vorresti automatizzare o i programmi da collegare. Modulo, email, telefono e WhatsApp. Bologna, Modena e da remoto." },
       { property: "og:title", content: "Contatti — Menetti Diego" },
       { property: "og:description", content: "Raccontami cosa vuoi migliorare nella tua attività." },
       { property: "og:type", content: "website" },
@@ -30,7 +30,7 @@ function Contatti() {
   return (
     <>
       <PageIntro eyebrow="Contatti" title="Raccontami cosa vuoi migliorare">
-        Non è necessario sapere già quale servizio scegliere. Descrivi la situazione con parole tue: al resto penso io.
+        Non serve sapere già quale servizio scegliere. Descrivimi la situazione con parole tue, per esempio un'attività che ripeti ogni settimana o due programmi che vorresti collegare.
       </PageIntro>
       <section className="container-page grid gap-12 py-14 lg:grid-cols-[1.4fr_1fr]">
         <div className="rounded-xl border bg-card p-8">

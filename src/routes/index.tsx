@@ -6,10 +6,10 @@ import { CtaBand, PrimaryLink } from "@/components/site/ui";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Menetti Diego — Soluzioni informatiche per lavorare meglio" },
-      { name: "description", content: "Siti web, software su misura, automazione e consulenza informatica per imprese e professionisti tra Bologna, Modena e da remoto." },
-      { property: "og:title", content: "Menetti Diego — Soluzioni informatiche per lavorare meglio" },
-      { property: "og:description", content: "Siti web, software, automazione e consulenza informatica per piccole imprese e professionisti." },
+      { title: "Automazioni aziendali e integrazione software a Bologna e Modena | Menetti Diego" },
+      { name: "description", content: "Consulente informatico freelance: automatizzo attività ripetitive, collego i software che usi già e realizzo siti web per aziende. Bologna, Modena e da remoto." },
+      { property: "og:title", content: "Menetti Diego — Automazioni aziendali e integrazione tra software" },
+      { property: "og:description", content: "Meno lavoro manuale e programmi che si parlano tra loro. Consulenza informatica freelance tra Bologna e Modena." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -19,16 +19,16 @@ export const Route = createFileRoute("/")({
 });
 
 const needs: { icon: typeof Globe; title: string; text: string; slug: ServiceSlug; cta: string }[] = [
-  { icon: Globe, slug: "siti-web", title: "Voglio un sito web o migliorare quello che ho già.", text: "Per chi deve presentare la propria attività, mostrare servizi, ricevere richieste di contatto oppure aggiornare un sito esistente. Il tutto ad un prezzo assai vantaggioso. Mi occupo io di tutto: sito, hosting, dominio, ecc...", cta: "Parliamo del tuo sito" },
-  { icon: Repeat, slug: "automazione", title: "Voglio semplificare attività ripetitive.", text: "Per chi perde tempo con operazioni manuali, inserimenti di dati, notifiche, report o passaggi ripetitivi fra diversi strumenti.\nLe perdite di tempo costano e pesano di più di altro.", cta: "Analizziamo il tuo processo" },
-  { icon: Puzzle, slug: "software", title: "Mi serve un software o collegare strumenti diversi.", text: "Per chi ha bisogno di uno strumento personalizzato o vuole fare comunicare applicazioni che utilizza già.\nSe ce n'è bisogno anche integrazioni con IA.", cta: "Descrivimi la tua esigenza" },
-  { icon: LifeBuoy, slug: "consulenza", title: "Ho un problema informatico e non so come fare o quale soluzione scegliere.", text: "Per chi ha bisogno di consulenza per individuare un problema, valutare le alternative e pianificare una soluzione.", cta: "Chiedi un confronto" },
+  { icon: Repeat, slug: "automazione", title: "Perdo tempo con attività ripetitive.", text: "Copiare dati da un programma all'altro, trascrivere documenti, mandare sempre le stesse email, preparare gli stessi report. Sono passaggi che spesso si possono automatizzare, almeno in parte.", cta: "Descrivimi l'attività" },
+  { icon: Puzzle, slug: "software", title: "I miei programmi non si parlano tra loro.", text: "Gestionale, fogli di calcolo, posta, servizi online: se i dati vanno ricopiati a mano tra uno e l'altro, possiamo vedere come collegarli. Se manca proprio uno strumento, posso realizzarlo su misura.", cta: "Parliamo dei tuoi programmi" },
+  { icon: Globe, slug: "siti-web", title: "Voglio un sito web o migliorare quello che ho già.", text: "Per presentare la tua attività, mostrare i servizi e ricevere richieste di contatto. Posso seguire tutto io, compresi dominio e hosting, con costi chiari fin dall'inizio.", cta: "Parliamo del tuo sito" },
+  { icon: LifeBuoy, slug: "consulenza", title: "Ho un problema informatico o devo scegliere uno strumento.", text: "Per capire cosa non funziona, confrontare le alternative e decidere con più informazioni in mano.", cta: "Chiedi un confronto" },
 ];
 
 const steps = [
-  { title: "Ascolto e analisi", text: "Mi racconti come lavori e cosa vorresti migliorare. Faccio domande, osservo il contesto e capisco il problema reale." },
-  { title: "Proposta della soluzione", text: "Ti presento una soluzione proporzionata, spiegata in modo chiaro, con costi, tempi e limiti definiti prima di iniziare." },
-  { title: "Realizzazione e supporto", text: "Realizzo quanto concordato, ti mostro come usarlo e resto disponibile per il supporto previsto." },
+  { title: "Ascolto e analisi", text: "Mi racconti come lavori oggi e cosa vorresti cambiare. Faccio domande e cerco di capire dove si perde davvero tempo." },
+  { title: "Proposta", text: "Ti presento una soluzione proporzionata al problema, con costi, tempi e limiti definiti prima di iniziare. Se non conviene farla, te lo dico." },
+  { title: "Realizzazione e supporto", text: "Realizzo quanto concordato, lo proviamo insieme, ti mostro come usarlo e resto disponibile per il supporto previsto." },
 ];
 
 function Home() {
@@ -37,17 +37,17 @@ function Home() {
       <section className="border-b">
         <div className="container-page py-16 md:py-24">
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">{site.role}</p>
-          <h1 className="mt-3 max-w-3xl text-4xl font-semibold md:text-6xl">Soluzioni informatiche per lavorare meglio.</h1>
+          <h1 className="mt-3 max-w-3xl text-4xl font-semibold md:text-6xl">Soluzioni informatiche e assistenza per PMI.</h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Realizzo siti web, sviluppo software e automatizzo processi per aiutare imprese e professionisti a semplificare il lavoro e utilizzare la tecnologia in modo concreto.
+            Sono Diego, consulente informatico freelance. Aiuto piccole e medie imprese a ridurre il lavoro manuale: automatizzo processi aziendali ripetitivi, collego i programmi che usano già e, quando serve, realizzo siti web o strumenti su misura.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <PrimaryLink>Raccontami il tuo progetto</PrimaryLink>
-            <Link to="/servizi" className="inline-flex min-h-11 items-center gap-2 px-2 font-semibold text-primary hover:underline">
-              Scopri i servizi <ArrowRight className="size-4" aria-hidden />
+            <PrimaryLink servizio="automazione">Descrivimi un processo che ti fa perdere tempo</PrimaryLink>
+            <Link to="/progetti" className="inline-flex min-h-11 items-center gap-2 px-2 font-semibold text-primary hover:underline">
+              Guarda cosa ho realizzato <ArrowRight className="size-4" aria-hidden />
             </Link>
           </div>
-          <p className="mt-8 text-sm text-muted-foreground">Lavoro con attività di Bologna, Modena e dintorni, e da remoto in tutta Italia.</p>
+          <p className="mt-8 text-sm text-muted-foreground">Lavoro in presenza con aziende di Bologna, Modena e dintorni, e da remoto in tutta Italia.</p>
         </div>
       </section>
 
@@ -61,7 +61,7 @@ function Home() {
                 <div className="flex items-center gap-3">
                   <n.icon className="size-6 shrink-0 text-primary" aria-hidden />
                   <span className="text-sm font-semibold uppercase tracking-wider text-primary">
-                    {({ "siti-web": "Siti web", automazione: "Automazioni informatiche", software: "Custom software", consulenza: "Assistenza tecnica" } as Record<string, string>)[n.slug]}
+                    {({ "siti-web": "Siti web", automazione: "Automazioni", software: "Integrazioni e software", consulenza: "Consulenza" } as Record<string, string>)[n.slug]}
                   </span>
                 </div>
                 <h3 className="mt-4 text-xl font-semibold">{n.title}</h3>
@@ -92,7 +92,7 @@ function Home() {
 
       <section aria-labelledby="servizi">
         <div className="container-page py-16">
-          <h2 id="servizi" className="text-3xl font-semibold md:text-4xl">Servizi</h2>
+          <h2 id="servizi" className="text-3xl font-semibold md:text-4xl">I servizi, in breve</h2>
           <div className="mt-10 grid gap-x-10 gap-y-8 md:grid-cols-2">
             {services.map((s) => (
               <div key={s.slug} className="border-l-2 border-highlight pl-5">
@@ -125,7 +125,7 @@ function Home() {
       {publishedProjects.length > 0 && (
         <section aria-labelledby="progetti">
           <div className="container-page py-16">
-            <h2 id="progetti" className="text-3xl font-semibold md:text-4xl">Alcuni progetti</h2>
+            <h2 id="progetti" className="text-3xl font-semibold md:text-4xl">Alcuni progetti reali</h2>
             <ul className="mt-8 grid gap-6 md:grid-cols-3">
               {publishedProjects.slice(0, 3).map((p) => (
                 <li key={p.name} className="rounded-xl border bg-card p-5">
@@ -145,14 +145,14 @@ function Home() {
           <h2 id="chi" className="text-3xl font-semibold md:text-4xl">Chi sono</h2>
           <div>
             <p className="text-lg text-muted-foreground">
-              Sono Diego Menetti, consulente informatico e sviluppatore freelance. Il mio lavoro è capire di cosa ha bisogno la tua attività e proporti interventi proporzionati al problema, senza strumenti inutilmente complessi o costosi. Lavori direttamente con me, dall'analisi alla consegna.
+              Sono Diego Menetti, consulente informatico e sviluppatore freelance. Prima di proporre qualsiasi cosa cerco di capire come lavori, poi ti suggerisco l'intervento più semplice che risolve il problema, senza strumenti inutilmente complessi o costosi. Parli sempre direttamente con me, dall'analisi alla consegna.
             </p>
-            <Link to="/chi-sono" className="mt-4 inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:underline">Conosci il mio approccio <ArrowRight className="size-4" aria-hidden /></Link>
+            <Link to="/chi-sono" className="mt-4 inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:underline">Come lavoro e chi sono <ArrowRight className="size-4" aria-hidden /></Link>
           </div>
         </div>
       </section>
 
-      <CtaBand title="Hai un'idea o un problema da risolvere?" text="Descrivimi la situazione. Valutiamo insieme se e come posso esserti utile." />
+      <CtaBand title="Hai un processo manuale che ti fa perdere tempo?" text="Raccontami come lo gestisci oggi. Lo esaminiamo insieme e ti dico se e come si può semplificare." cta="Raccontami il tuo processo" />
     </>
   );
 }
