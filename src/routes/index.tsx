@@ -7,9 +7,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Automazioni aziendali e integrazione software a Bologna e Modena | Menetti Diego" },
-      { name: "description", content: "Consulente informatico freelance: automatizzo attività ripetitive, collego i software che usi già e realizzo siti web per aziende. Bologna, Modena e da remoto." },
+      { name: "description", content: "Sono Diego Menetti: realizzo automazioni aziendali e collego i programmi delle PMI. Seguo anche software su misura, consulenza e siti web. Bologna, Modena e da remoto." },
       { property: "og:title", content: "Menetti Diego — Automazioni aziendali e integrazione tra software" },
-      { property: "og:description", content: "Meno lavoro manuale e programmi che si parlano tra loro. Consulenza informatica freelance tra Bologna e Modena." },
+      { property: "og:description", content: "Automazioni e collegamenti tra programmi per PMI. Parli direttamente con Diego Menetti, il professionista che realizza il lavoro." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -19,16 +19,16 @@ export const Route = createFileRoute("/")({
 });
 
 const needs: { icon: typeof Globe; title: string; text: string; slug: ServiceSlug; cta: string }[] = [
-  { icon: Repeat, slug: "automazione", title: "Perdo tempo con attività ripetitive.", text: "Copiare dati da un programma all'altro, trascrivere documenti, mandare sempre le stesse email, preparare gli stessi report. Sono passaggi che spesso si possono automatizzare, almeno in parte.", cta: "Descrivimi l'attività" },
-  { icon: Puzzle, slug: "software", title: "I miei programmi non si parlano tra loro.", text: "Gestionale, fogli di calcolo, posta, servizi online: se i dati vanno ricopiati a mano tra uno e l'altro, possiamo vedere come collegarli. Se manca proprio uno strumento, posso realizzarlo su misura.", cta: "Parliamo dei tuoi programmi" },
-  { icon: Globe, slug: "siti-web", title: "Voglio un sito web o migliorare quello che ho già.", text: "Per presentare la tua attività, mostrare i servizi e ricevere richieste di contatto. Posso seguire tutto io, compresi dominio e hosting, con costi chiari fin dall'inizio.", cta: "Parliamo del tuo sito" },
-  { icon: LifeBuoy, slug: "consulenza", title: "Ho un problema informatico o devo scegliere uno strumento.", text: "Per capire cosa non funziona, confrontare le alternative e decidere con più informazioni in mano.", cta: "Chiedi un confronto" },
+  { icon: Repeat, slug: "automazione", title: "Ripeto ogni giorno gli stessi passaggi.", text: "Aprire fatture, trascrivere dati, preparare riepiloghi e inviarli via email. Esamino queste attività per capire quali passaggi automatizzare e quali controlli mantenere.", cta: "Descrivimi l'attività" },
+  { icon: Puzzle, slug: "software", title: "Devo ricopiare i dati tra più programmi.", text: "Il gestionale e i fogli di calcolo contengono le stesse informazioni, ma vanno aggiornati separatamente. Verifico come collegarli; se manca una funzione, valuto uno strumento su misura.", cta: "Dimmi quali programmi usi" },
+  { icon: Globe, slug: "siti-web", title: "Mi serve un sito, o devo aggiornare quello attuale.", text: "Realizzo siti per presentare servizi e prodotti e rendere facili da trovare i contatti. Posso occuparmi anche di dominio, hosting e manutenzione.", cta: "Parliamo del tuo sito" },
+  { icon: LifeBuoy, slug: "consulenza", title: "Ho un problema informatico o un acquisto da valutare.", text: "Analizzo cosa non funziona e confronto le alternative. Ti aiuto a decidere quale intervento o programma è adatto al tuo lavoro.", cta: "Spiegami il problema" },
 ];
 
 const steps = [
-  { title: "Ascolto e analisi", text: "Mi racconti come lavori oggi e cosa vorresti cambiare. Faccio domande e cerco di capire dove si perde davvero tempo." },
-  { title: "Proposta", text: "Ti presento una soluzione proporzionata al problema, con costi, tempi e limiti definiti prima di iniziare. Se non conviene farla, te lo dico." },
-  { title: "Realizzazione e supporto", text: "Realizzo quanto concordato, lo proviamo insieme, ti mostro come usarlo e resto disponibile per il supporto previsto." },
+  { title: "Esamino il lavoro attuale", text: "Partiamo da un'attività concreta, dai programmi che usi e dai passaggi che fai a mano. Ti chiedo esempi per capire il problema prima di proporre un intervento." },
+  { title: "Definiamo l'intervento", text: "Ti indico cosa posso realizzare, con costi, tempi e limiti. Se basta un programma già disponibile o l'intervento non conviene, te lo dico." },
+  { title: "Realizzo e verifico", text: "Seguo io il lavoro e lo proviamo insieme. Ti mostro come usarlo e concordiamo l'eventuale supporto successivo." },
 ];
 
 function Home() {
@@ -37,14 +37,14 @@ function Home() {
       <section className="border-b">
         <div className="container-page py-16 md:py-24">
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">{site.role}</p>
-          <h1 className="mt-3 max-w-3xl text-4xl font-semibold md:text-6xl">Soluzioni informatiche e assistenza per PMI.</h1>
+          <h1 className="mt-3 max-w-3xl text-4xl font-semibold md:text-6xl">Automazioni e integrazioni software per PMI.</h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Sono Diego, consulente informatico freelance. Aiuto piccole e medie imprese a ridurre il lavoro manuale: automatizzo processi aziendali ripetitivi, collego i programmi che usano già e, quando serve, realizzo siti web o strumenti su misura.
+            Sono Diego Menetti, consulente informatico indipendente. Realizzo automazioni per le attività ripetitive e collego i programmi che usi, così i dati non vanno ricopiati a mano. Quando serve, mi occupo anche di software su misura, consulenza e siti web. Dalla prima richiesta alla consegna, parli direttamente con me.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <PrimaryLink servizio="automazione">Descrivimi un processo che ti fa perdere tempo</PrimaryLink>
+            <PrimaryLink servizio="automazione">Parliamo del tuo lavoro</PrimaryLink>
             <Link to="/progetti" className="inline-flex min-h-11 items-center gap-2 px-2 font-semibold text-primary hover:underline">
-              Guarda cosa ho realizzato <ArrowRight className="size-4" aria-hidden />
+              Vedi i progetti <ArrowRight className="size-4" aria-hidden />
             </Link>
           </div>
           <p className="mt-8 text-sm text-muted-foreground">Lavoro in presenza con aziende di Bologna, Modena e dintorni, e da remoto in tutta Italia.</p>
@@ -54,7 +54,7 @@ function Home() {
       <section aria-labelledby="bisogno" className="bg-secondary">
         <div className="container-page py-16">
           <h2 id="bisogno" className="text-3xl font-semibold md:text-4xl">Di cosa hai bisogno?</h2>
-          <p className="mt-3 max-w-2xl text-muted-foreground">Scegli la situazione più vicina alla tua. Non serve conoscere i termini tecnici.</p>
+          <p className="mt-3 max-w-2xl text-muted-foreground">Posso intervenire su attività ripetitive e programmi scollegati, ma anche su un sito o un problema informatico.</p>
           <ul className="mt-10 grid gap-5 md:grid-cols-2">
             {needs.map((n) => (
               <li key={n.slug} className="flex flex-col rounded-xl border bg-card p-6">
@@ -81,8 +81,8 @@ function Home() {
             <div className="flex items-start gap-3">
               <MessageCircle className="mt-1 size-6 shrink-0 text-primary" aria-hidden />
               <div>
-                <p className="text-lg font-semibold">Non sai da dove cominciare? Raccontami la tua necessità.</p>
-                <p className="text-muted-foreground">Descrivi la situazione con parole tue: ti aiuto io a capire cosa serve.</p>
+                <p className="text-lg font-semibold">Non sai quale intervento serve?</p>
+                <p className="text-muted-foreground">Partiamo dal problema: cosa fai oggi e cosa non funziona come vorresti.</p>
               </div>
             </div>
             <div className="shrink-0"><PrimaryLink servizio="non-so">Scrivimi</PrimaryLink></div>
@@ -92,14 +92,14 @@ function Home() {
 
       <section aria-labelledby="servizi">
         <div className="container-page py-16">
-          <h2 id="servizi" className="text-3xl font-semibold md:text-4xl">I servizi, in breve</h2>
+          <h2 id="servizi" className="text-3xl font-semibold md:text-4xl">Di cosa mi occupo</h2>
           <div className="mt-10 grid gap-x-10 gap-y-8 md:grid-cols-2">
             {services.map((s) => (
               <div key={s.slug} className="border-l-2 border-highlight pl-5">
                 <h3 className="text-xl font-semibold">{s.title}</h3>
                 <p className="mt-2 text-muted-foreground">{s.short}</p>
                 <Link to="/servizi" hash={s.slug} className="mt-2 inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:underline">
-                  Come funziona <ArrowRight className="size-4" aria-hidden />
+                  Dettagli del servizio <ArrowRight className="size-4" aria-hidden />
                 </Link>
               </div>
             ))}
@@ -125,7 +125,7 @@ function Home() {
       {publishedProjects.length > 0 && (
         <section aria-labelledby="progetti">
           <div className="container-page py-16">
-            <h2 id="progetti" className="text-3xl font-semibold md:text-4xl">Alcuni progetti reali</h2>
+            <h2 id="progetti" className="text-3xl font-semibold md:text-4xl">Alcuni lavori realizzati</h2>
             <ul className="mt-8 grid gap-6 md:grid-cols-3">
               {publishedProjects.slice(0, 3).map((p) => (
                 <li key={p.name} className="rounded-xl border bg-card p-5">
@@ -145,14 +145,14 @@ function Home() {
           <h2 id="chi" className="text-3xl font-semibold md:text-4xl">Chi sono</h2>
           <div>
             <p className="text-lg text-muted-foreground">
-              Sono Diego Menetti, consulente informatico e sviluppatore freelance. Prima di proporre qualsiasi cosa cerco di capire come lavori, poi ti suggerisco l'intervento più semplice che risolve il problema, senza strumenti inutilmente complessi o costosi. Parli sempre direttamente con me, dall'analisi alla consegna.
+              Lavoro con piccole e medie imprese, artigiani e professionisti. Mi interessa capire come vengono usati i programmi nel lavoro quotidiano e dove un intervento può essere utile. Mi occupo personalmente dell'analisi e della realizzazione: non ci sono passaggi tra commerciale e tecnico.
             </p>
-            <Link to="/chi-sono" className="mt-4 inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:underline">Come lavoro e chi sono <ArrowRight className="size-4" aria-hidden /></Link>
+            <Link to="/chi-sono" className="mt-4 inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:underline">Il mio approccio <ArrowRight className="size-4" aria-hidden /></Link>
           </div>
         </div>
       </section>
 
-      <CtaBand title="Hai un processo manuale che ti fa perdere tempo?" text="Raccontami come lo gestisci oggi. Lo esaminiamo insieme e ti dico se e come si può semplificare." cta="Raccontami il tuo processo" />
+      <CtaBand title="Quale attività vorresti smettere di fare a mano?" text="Scrivimi come la gestisci e quali programmi usi. È il punto di partenza per valutare un'automazione o un collegamento." cta="Descrivimi l'attività" />
     </>
   );
 }

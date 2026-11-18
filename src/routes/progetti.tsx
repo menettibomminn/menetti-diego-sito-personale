@@ -7,9 +7,9 @@ export const Route = createFileRoute("/progetti")({
   head: () => ({
     meta: [
       { title: "Progetti: automazioni, software su misura e siti web | Menetti Diego" },
-      { name: "description", content: "Progetti reali: un'automazione che legge fatture PDF e le registra in Google Sheets, uno strumento di ricerca nei preventivi e un sito web per un'azienda agricola." },
+      { name: "description", content: "Alcuni lavori di Diego Menetti: ricerca nello storico dei preventivi, sito per I-Prá Savigno e automazione delle fatture tra Google Drive, OpenAI e Google Sheets." },
       { property: "og:title", content: "Progetti realizzati — Menetti Diego" },
-      { property: "og:description", content: "Problema di partenza, soluzione e strumenti usati in alcuni lavori reali." },
+      { property: "og:description", content: "Cosa ho realizzato e come funziona: ricerca nei preventivi, sito di un'azienda agricola e registrazione automatica dei dati delle fatture." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -22,7 +22,7 @@ function Progetti() {
   return (
     <>
       <PageIntro eyebrow="Progetti" title="Alcuni lavori realizzati">
-        Per ogni progetto trovi il problema di partenza, cosa ho realizzato e gli strumenti usati. Pubblico solo lavori per cui ho l'autorizzazione del cliente.
+        Una ricerca nello storico dei preventivi, un sito per un'azienda agricola e un flusso per registrare le fatture. Sono esempi dei lavori che realizzo; pubblico solo quelli per cui ho l'autorizzazione del cliente.
       </PageIntro>
       <section className="container-page py-16">
         {publishedProjects.length === 0 ? (
@@ -60,7 +60,7 @@ function Progetti() {
           </ul>
         )}
       </section>
-      <CtaBand title="Hai un'esigenza simile?" text="Raccontami come gestisci oggi quel lavoro: valutiamo insieme se si può semplificare." cta="Raccontami il tuo caso" />
+      <CtaBand title="Gestisci un'attività simile?" text="Dimmi quali documenti o programmi usi e cosa fai a mano. Posso valutare se un intervento di questo tipo è adatto anche al tuo caso." cta="Parliamo del tuo caso" />
     </>
   );
 }

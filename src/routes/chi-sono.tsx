@@ -7,9 +7,9 @@ export const Route = createFileRoute("/chi-sono")({
   head: () => ({
     meta: [
       { title: "Chi sono — Diego Menetti, consulente informatico a Bologna" },
-      { name: "description", content: "Consulente informatico e sviluppatore freelance tra Bologna e Modena: come lavoro, cosa faccio e perché preferisco soluzioni semplici e proporzionate." },
+      { name: "description", content: "Sono Diego Menetti, consulente informatico indipendente. Mi occupo di automazioni e integrazioni per PMI: segui il lavoro direttamente con me, dall'analisi alla consegna." },
       { property: "og:title", content: "Chi sono — Diego Menetti" },
-      { property: "og:description", content: "Un consulente informatico freelance con un approccio pratico: prima capire, poi proporre." },
+      { property: "og:description", content: "Mi occupo personalmente dell'analisi e della realizzazione. Lavoro tra Bologna e Modena e da remoto in tutta Italia." },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -22,16 +22,16 @@ import photoAsset from "@/assets/diego-menetti.jpg.asset.json";
 const photo: string | null = photoAsset.url;
 
 const principles = [
-  { t: "Prima capire, poi proporre", d: "Ogni intervento parte da una conversazione sul tuo lavoro, non da uno strumento da vendere." },
-  { t: "Soluzioni proporzionate", d: "Se basta una soluzione semplice o un programma già esistente, te lo dico. Sviluppo su misura solo quando serve e se ha un valore reale per te." },
-  { t: "Chiarezza", d: "Spiego cosa faccio, quanto costa e quali sono i limiti, con parole comprensibili anche a chi non è del settore." },
-  { t: "Un unico referente", d: "Parli direttamente con chi realizza il lavoro, senza passaggi intermedi." },
+  { t: "Partire da un esempio", d: "Un documento, un foglio di calcolo o un'attività ricorrente mi aiutano a capire il problema meglio di una richiesta generica." },
+  { t: "Usare quello che c'è", d: "Prima verifico cosa permettono i programmi che usi. Propongo uno sviluppo su misura solo se gli strumenti disponibili non bastano." },
+  { t: "Concordare il lavoro", d: "Definiamo cosa è incluso, quanto costa e quali limiti ha l'intervento. Ti spiego i dettagli necessari senza gergo tecnico." },
+  { t: "Seguire il progetto di persona", d: "Chi ascolta la tua richiesta è anche chi realizza il lavoro: puoi confrontarti direttamente con me durante il progetto." },
 ];
 
 function ChiSono() {
   return (
     <>
-      <PageIntro eyebrow="Chi sono" title="Diego Menetti, consulente informatico e sviluppatore freelance" />
+      <PageIntro eyebrow="Chi sono" title="Diego Menetti, consulente informatico indipendente" />
       <section className="container-page grid gap-12 py-16 md:grid-cols-[18rem_1fr]">
         <div className="aspect-[4/5] w-full max-w-72 overflow-hidden rounded-xl bg-muted">
           {photo ? (
@@ -44,13 +44,13 @@ function ChiSono() {
         </div>
         <div className="max-w-2xl space-y-5 text-lg">
           <p>
-            Mi occupo di consulenza informatica, automazione dei processi e sviluppo software. Lavoro con piccole e medie imprese, artigiani, attività locali e professionisti che vogliono usare meglio la tecnologia nel lavoro di tutti i giorni.
+            Mi occupo soprattutto di automazioni aziendali e integrazioni tra software. Lavoro con piccole e medie imprese, artigiani e professionisti che devono gestire dati, documenti e attività ripetitive. A questi interventi affianco consulenza informatica, sviluppo su misura e siti web.
           </p>
           <p className="text-muted-foreground">
-            In pratica cerco di capire dove si perde tempo e cosa si può semplificare. A volte la risposta è un'automazione che elimina un passaggio ripetitivo, altre volte un collegamento tra due programmi, uno strumento su misura o un sito più chiaro. A volte è solo un consiglio su cosa scegliere.
+            Prima di lavorare su un programma, cerco di capire come viene usato: chi inserisce i dati, dove vengono ricopiati e quali passaggi richiedono attenzione. Da lì valuto cosa automatizzare e cosa lasciare alla verifica di una persona. Se basta cambiare una procedura o usare una funzione già disponibile, te lo dico.
           </p>
           <p className="text-muted-foreground">Opero principalmente tra Bologna e Modena in presenza, e collaboro da remoto in tutta Italia.</p>
-          <h2 className="pt-6 text-2xl font-semibold">Come mi piace lavorare</h2>
+          <h2 className="pt-6 text-2xl font-semibold">Come seguo il lavoro</h2>
           <ul className="grid gap-6 sm:grid-cols-2">
             {principles.map((p) => (
               <li key={p.t}>
@@ -61,7 +61,7 @@ function ChiSono() {
           </ul>
         </div>
       </section>
-      <CtaBand title="Parliamone" text="Raccontami la tua attività e cosa vorresti migliorare." cta="Vai ai contatti" />
+      <CtaBand title="Puoi scrivermi direttamente" text="Leggo io le richieste. Descrivimi la tua attività e il problema su cui vorresti intervenire." cta="Contattami" />
     </>
   );
 }

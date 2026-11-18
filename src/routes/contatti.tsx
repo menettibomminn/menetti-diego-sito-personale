@@ -13,9 +13,9 @@ export const Route = createFileRoute("/contatti")({
   head: () => ({
     meta: [
       { title: "Contatti — Consulente informatico Bologna e Modena | Menetti Diego" },
-      { name: "description", content: "Descrivi con parole tue l'attività che vorresti automatizzare o i programmi da collegare. Modulo, email, telefono e WhatsApp. Bologna, Modena e da remoto." },
+      { name: "description", content: "Contatta Diego Menetti per automazioni, integrazioni tra software e altri interventi informatici. Puoi usare il modulo Google, email, telefono o WhatsApp." },
       { property: "og:title", content: "Contatti — Menetti Diego" },
-      { property: "og:description", content: "Raccontami cosa vuoi migliorare nella tua attività." },
+      { property: "og:description", content: "Leggo personalmente le richieste: descrivimi l'attività da automatizzare, i programmi da collegare o il problema informatico." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -29,14 +29,14 @@ function Contatti() {
 
   return (
     <>
-      <PageIntro eyebrow="Contatti" title="Raccontami cosa vuoi migliorare">
-        Non serve sapere già quale servizio scegliere. Descrivimi la situazione con parole tue, per esempio un'attività che ripeti ogni settimana o due programmi che vorresti collegare.
+      <PageIntro eyebrow="Contatti" title="Parliamo del tuo lavoro">
+        Leggo e seguo personalmente le richieste. Puoi descrivermi un'attività da automatizzare, i programmi da collegare o un altro problema informatico. Non serve una spiegazione tecnica: dimmi cosa fai oggi e dove incontri difficoltà.
       </PageIntro>
       <section className="container-page grid gap-12 py-14 lg:grid-cols-[1.4fr_1fr]">
         <div className="rounded-xl border bg-card p-8">
-          <h2 className="text-2xl font-semibold">Compila il modulo di richiesta</h2>
+          <h2 className="text-2xl font-semibold">Scrivimi dal modulo</h2>
           <p className="mt-3 text-muted-foreground">
-            Bastano pochi minuti: indica chi sei e di cosa hai bisogno. Il modulo si apre in una nuova scheda.
+            Nel modulo Google puoi indicare chi sei e descrivere la richiesta. Si apre in una nuova scheda.
           </p>
           <a
             href={site.contactFormUrl}
@@ -52,9 +52,9 @@ function Contatti() {
           <div>
             <h2 className="text-xl font-semibold">Cosa succede dopo</h2>
             <ol className="mt-4 space-y-3 text-muted-foreground">
-              <li><strong className="text-foreground">1.</strong> Leggo la tua richiesta.</li>
-              <li><strong className="text-foreground">2.</strong> Ti ricontatto per approfondire, se servono altre informazioni.</li>
-              <li><strong className="text-foreground">3.</strong> Ti propongo una soluzione o un primo passo concreto, senza impegno.</li>
+              <li><strong className="text-foreground">1.</strong> Esamino il problema che mi hai descritto.</li>
+              <li><strong className="text-foreground">2.</strong> Ti ricontatto per chiarire i dettagli necessari.</li>
+              <li><strong className="text-foreground">3.</strong> Ti dico se posso aiutarti e quale intervento valutare, senza impegno.</li>
             </ol>
           </div>
           {hasDirect && (
@@ -68,7 +68,7 @@ function Contatti() {
               </ul>
             </div>
           )}
-          <p className="text-sm text-muted-foreground">Lavoro tra {site.area}</p>
+          <p className="text-sm text-muted-foreground">{site.area}</p>
         </aside>
       </section>
     </>

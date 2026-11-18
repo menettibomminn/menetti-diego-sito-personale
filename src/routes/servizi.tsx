@@ -7,9 +7,9 @@ export const Route = createFileRoute("/servizi")({
   head: () => ({
     meta: [
       { title: "Servizi: automazione processi, integrazione software e siti web | Menetti Diego" },
-      { name: "description", content: "Automazione dei processi aziendali, integrazione tra software tramite API, realizzazione e manutenzione di siti web, consulenza informatica. Esempi concreti e come lavoro." },
+      { name: "description", content: "Realizzo automazioni e collegamenti tra i programmi delle PMI. Offro anche sviluppo su misura, siti web e consulenza: interventi, esempi e modalità di lavoro." },
       { property: "og:title", content: "Servizi — Automazione, integrazioni e siti web | Menetti Diego" },
-      { property: "og:description", content: "Cosa faccio, per chi e come lavoro: automazioni aziendali, integrazione tra software, siti web e consulenza." },
+      { property: "og:description", content: "Dalla trascrizione delle fatture ai dati da aggiornare in più programmi: come intervengo sui processi aziendali e quali altri servizi offro." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -21,8 +21,8 @@ export const Route = createFileRoute("/servizi")({
 function Servizi() {
   return (
     <>
-      <PageIntro eyebrow="Servizi" title="Automazioni, integrazioni tra software e siti web per aziende">
-        Mi occupo soprattutto di ridurre il lavoro manuale nelle aziende: automatizzo attività ripetitive e collego i programmi che non comunicano tra loro. Realizzo anche siti web e offro consulenza informatica. Ogni progetto comprende solo ciò che concordiamo; se non sai da quale parte iniziare, scrivimi e lo capiamo insieme.
+      <PageIntro eyebrow="Servizi" title="Automazioni aziendali e integrazioni tra software">
+        Il mio lavoro principale è automatizzare operazioni ripetitive e collegare i programmi già in uso nelle aziende. A questo affianco sviluppo software su misura, consulenza informatica e siti web. L'intervento dipende dal problema: non sempre serve costruire qualcosa di nuovo.
       </PageIntro>
       <nav aria-label="Indice servizi" className="border-b bg-secondary">
         <ul className="container-page flex flex-wrap gap-x-6 gap-y-2 py-4 text-sm">
@@ -65,7 +65,7 @@ function Servizi() {
           </div>
         </section>
       ))}
-      <CtaBand title="Non sei sicuro di quale servizio ti serva?" text="Non è necessario saperlo. Raccontami il problema con parole tue e ti indico la strada più adatta." cta="Raccontami la tua necessità" />
+      <CtaBand title="Da quale problema partiamo?" text="Puoi descrivermi un passaggio ripetitivo, due programmi da collegare o una difficoltà informatica. Valutiamo l'intervento prima di scegliere uno strumento." cta="Scrivimi il problema" />
     </>
   );
 }

@@ -12,8 +12,8 @@ export const site = {
   name: "Menetti Diego",
   /** Nome della persona (usato dove serve il nome personale) */
   personName: "Diego Menetti",
-  role: "CONSULENZA INFORMATICA, INTELLIGENZA ARTIFICIALE, SVILUPPO SOFTWARE, AUTOMAZIONE E SITI WEB.",
-  tagline: "Soluzioni informatiche per lavorare meglio.",
+  role: "Automazioni aziendali e integrazioni tra software",
+  tagline: "Automazione dei processi e collegamento tra programmi per PMI.",
   area: "Bologna e Modena in presenza - tutta Italia da remoto.",
   // Lascia stringa vuota per nascondere il recapito dal sito.
   email: "diego.menetti.05@gmail.com",
@@ -33,9 +33,9 @@ export type ServiceSlug = "siti-web" | "automazione" | "software" | "consulenza"
 
 export const serviceOptions: { value: ServiceSlug; label: string }[] = [
   { value: "non-so", label: "Non so quale scegliere" },
-  { value: "siti-web", label: "Sito web e presenza digitale" },
-  { value: "automazione", label: "Automazione e intelligenza artificiale" },
-  { value: "software", label: "Software su misura e integrazioni" },
+  { value: "siti-web", label: "Realizzazione o manutenzione di un sito web" },
+  { value: "automazione", label: "Automazione di un'attività aziendale" },
+  { value: "software", label: "Collegamento tra programmi o software su misura" },
   { value: "consulenza", label: "Consulenza e assistenza informatica" },
 ];
 
@@ -55,59 +55,59 @@ export const services: Service[] = [
   {
     slug: "automazione",
     title: "Automazione dei processi aziendali",
-    short: "Tolgo dal lavoro quotidiano i passaggi manuali che si ripetono sempre uguali.",
+    short: "Automatizzo la trascrizione di documenti, l'invio di riepiloghi e altri passaggi ripetitivi.",
     intro:
-      "Se ogni settimana qualcuno copia dati da un programma all'altro, aggiorna a mano un foglio di calcolo o prepara sempre lo stesso riepilogo, è probabile che una parte di quel lavoro si possa automatizzare. Analizzo le attività ripetitive e i processi aziendali, e valuto come automatizzarle. Propongo l'intelligenza artificiale solo quando porta un vantaggio concreto e tangibile, non come soluzione universale.",
+      "Aprire fatture, trascrivere dati e preparare riepiloghi sono attività necessarie, ma non sempre devono essere svolte a mano. Esamino il processo e realizzo automazioni per i passaggi che seguono regole definite. Per leggere o classificare documenti valuto anche l'intelligenza artificiale, se è adatta al caso.",
     forWho:
-      "Piccole e medie imprese, uffici amministrativi e professionisti che dedicano ore a operazioni manuali: inserimento dati, notifiche, report, archiviazione di documenti.",
+      "PMI, uffici amministrativi e professionisti che ripetono ogni giorno le stesse operazioni su dati e documenti.",
     problems: [
-      "Gli stessi dati vengono inseriti più volte in strumenti diversi.",
-      "Promemoria e aggiornamenti dipendono da qualcuno che se ne ricordi.",
-      "I report richiedono ore di copia e incolla.",
-      "Documenti come fatture o moduli vanno letti e trascritti a mano.",
+      "Ogni fattura va aperta e trascritta a mano.",
+      "Promemoria e aggiornamenti dipendono dalla memoria di una persona.",
+      "Per preparare un report bisogna ricopiare dati già disponibili.",
+      "L'archiviazione dei documenti richiede gli stessi passaggi ogni volta.",
     ],
     examples: [
-      "Flussi di lavoro che partono da soli quando arriva un file o un'email.",
-      "Estrazione di dati da documenti PDF e registrazione in un foglio Google.",
-      "Notifiche e riepiloghi inviati in automatico alle persone giuste.",
-      "Riduzione degli inserimenti manuali di dati.",
-      "Uso dell'AI per leggere o classificare documenti, quando ha senso.",
+      "Avvio di un'attività quando arriva un file o un'email.",
+      "Lettura dei dati di un PDF e registrazione in Google Sheets.",
+      "Invio automatico di notifiche e riepiloghi ai destinatari concordati.",
+      "Compilazione di registri senza trascrivere ogni dato.",
+      "Lettura o classificazione di documenti con intelligenza artificiale.",
     ],
     process:
-      "Mi racconti come gestisci oggi l'attività, passo per passo. Individuo i passaggi che si possono automatizzare e ti propongo una soluzione con costi e limiti chiari prima di iniziare. Poi la costruisco, la provo con dati reali e ti spiego come controllarla.",
-    cta: "Descrivimi un'attività da automatizzare",
+      "Parto da un esempio dell'attività e dai documenti che usi. Definisco quali passaggi automatizzare e quali controlli mantenere, poi ti indico costi e limiti. Realizzo il flusso, lo provo con dati reali e ti mostro come verificarne il funzionamento.",
+    cta: "Parliamo dell'attività da automatizzare",
   },
   {
     slug: "software",
-    title: "Integrazione tra software e strumenti su misura",
-    short: "Faccio comunicare i programmi che usi già, o creo lo strumento che manca.",
+    title: "Integrazioni tra software e sviluppo su misura",
+    short: "Collego i programmi che usi già. Se manca una funzione, valuto uno strumento su misura.",
     intro:
-      "Molte aziende usano un gestionale, un foglio di calcolo, la posta e qualche servizio online che non si parlano tra loro. Collego queste applicazioni, spesso tramite API, in modo che i dati passino da uno strumento all'altro senza essere ricopiati. Quando nessun programma esistente risponde bene a un'esigenza, realizzo uno strumento dedicato.",
+      "Se aggiorni il gestionale e poi devi riportare gli stessi dati in un foglio di calcolo, il lavoro si raddoppia. Verifico come collegare i programmi per trasferire le informazioni senza ricopiarle. Uso le API, cioè i collegamenti messi a disposizione dai software, quando presenti. Se serve una funzione non coperta dagli strumenti esistenti, posso svilupparla su misura.",
     forWho:
-      "Aziende con esigenze specifiche che i software standard coprono solo in parte, o che lavorano con più programmi scollegati.",
+      "Aziende che lavorano con più programmi separati o hanno un'esigenza interna che il software attuale non copre.",
     problems: [
-      "Usi più programmi che non si parlano tra loro.",
-      "Un'attività interna si gestisce ancora con fogli di calcolo complicati.",
+      "Lo stesso dato va aggiornato in più programmi.",
+      "Un'attività interna dipende da fogli di calcolo difficili da gestire.",
       "Il gestionale attuale va bene, ma manca una funzione importante.",
     ],
     examples: [
       "Sincronizzazione automatica dei dati tra gestionale, fogli di calcolo e altri strumenti.",
-      "Collegamenti tramite API tra applicazioni aziendali.",
-      "Piccoli strumenti interni, come una ricerca veloce nello storico dei preventivi.",
-      "Estensioni e personalizzazioni di sistemi esistenti.",
+      "Collegamenti tra applicazioni attraverso le loro API.",
+      "Strumenti interni per cercare nello storico dei preventivi.",
+      "Estensioni e personalizzazioni dei programmi già in uso.",
     ],
     process:
-      "Prima verifico se esiste già una soluzione adatta o se i tuoi programmi permettono di essere collegati. Se serve sviluppare, definiamo insieme le funzioni essenziali e procedo per fasi, con verifiche intermedie.",
-    cta: "Parliamo dei programmi da collegare",
+      "Verifico prima le possibilità e i limiti dei programmi in uso. Ti propongo un collegamento o uno strumento già disponibile; sviluppo qualcosa di nuovo solo se serve. Concordiamo le funzioni e le verifico con te durante il lavoro.",
+    cta: "Dimmi quali programmi usi",
   },
   {
     slug: "siti-web",
     title: "Realizzazione e manutenzione di siti web",
-    short: "Siti per aziende e attività locali, chiari da leggere anche da cellulare.",
+    short: "Realizzo e aggiorno siti per presentare l'attività e rendere facili da trovare i contatti.",
     intro:
-      "Realizzo siti vetrina e informativi per aziende, rinnovo siti esistenti e, se serve, mi occupo della manutenzione. Posso seguire anche la parte meno visibile: dominio, hosting e sicurezza, così hai un unico riferimento.",
+      "Accanto alle automazioni, realizzo siti vetrina e informativi e aggiorno quelli esistenti. Mi concentro sulle informazioni che servono ai clienti: cosa fai, dove lavori e come contattarti. Posso occuparmi anche di dominio, hosting e sicurezza.",
     forWho:
-      "Attività locali, artigiani, professionisti e piccole imprese che vogliono farsi trovare e presentare bene il proprio lavoro.",
+      "Attività locali, artigiani e professionisti che hanno bisogno di un sito per presentare il proprio lavoro o di aggiornare quello attuale.",
     problems: [
       "Il sito è datato o difficile da usare da smartphone.",
       "I clienti non trovano facilmente contatti, orari o servizi.",
@@ -120,17 +120,17 @@ export const services: Service[] = [
       "Gestire dominio, hosting e aggiornamenti.",
     ],
     process:
-      "Partiamo da cosa deve ottenere il sito, definiamo pagine e contenuti, poi lo realizzo e lo pubblichiamo. Gli aggiornamenti successivi si concordano a parte.",
+      "Definiamo le informazioni da pubblicare e le pagine necessarie. Realizzo il sito e lo controlliamo insieme prima di pubblicarlo. Manutenzione e aggiornamenti successivi si concordano a parte.",
     cta: "Parliamo del tuo sito",
   },
   {
     slug: "consulenza",
     title: "Consulenza e assistenza informatica",
-    short: "Un confronto per capire il problema, valutare le alternative e scegliere.",
+    short: "Analizzo problemi informatici e ti aiuto a scegliere programmi e interventi adatti al tuo lavoro.",
     intro:
-      "A volte non serve sviluppare nulla: serve capire cosa non funziona o quale strumento scegliere. Ti aiuto ad analizzare problemi hardware o software, a confrontare le alternative e a individuare la soluzione più adatta alla tua situazione.",
+      "Non tutti i problemi richiedono un nuovo programma. Offro consulenza e assistenza per capire cosa non funziona, valutare un acquisto o decidere come organizzare un intervento. Ti spiego le alternative e i loro limiti, senza dare per scontato che tu conosca i dettagli tecnici.",
     forWho:
-      "Chi ha un problema informatico, deve scegliere uno strumento o vuole pianificare un progetto senza sapere da dove partire.",
+      "Imprese e professionisti che hanno un problema con computer o programmi, devono scegliere un software o valutare un progetto.",
     problems: [
       "Non sai quale software o servizio scegliere.",
       "Computer, rete o programmi danno problemi e non è chiaro il motivo.",
@@ -139,12 +139,12 @@ export const services: Service[] = [
     examples: [
       "Valutare strumenti e software prima dell'acquisto.",
       "Analizzare problemi tecnici.",
-      "Pianificare piccoli progetti digitali.",
+      "Definire gli interventi necessari per un progetto informatico.",
       "Capire se un processo vale la pena di essere automatizzato.",
     ],
     process:
-      "Mi racconti la situazione, raccolgo le informazioni necessarie e ti restituisco un quadro chiaro delle opzioni, con pro e contro di ciascuna.",
-    cta: "Chiedi un confronto",
+      "Raccolgo le informazioni sul problema e sugli strumenti che usi. Ti indico le opzioni, i pro e i contro e l'intervento che ritengo opportuno.",
+    cta: "Spiegami il problema",
   },
 ];
 
@@ -171,9 +171,9 @@ export const projects: Project[] = [
   {
     name: "PriceFinder - strumento di ricerca",
     type: "Software su misura",
-    need: "Il problema: un'impresa edile prepara centinaia di preventivi sempre diversi e, per stabilire un prezzo, deve ritrovare voci simili in quelli vecchi.",
+    need: "Per preparare centinaia di preventivi diversi, un'impresa edile deve ritrovare le voci dei lavori precedenti e usarle come riferimento per i prezzi.",
     solution:
-      "Un piccolo tool costruito e pensato per quelle aziende, in questo caso edile, che devono produrre centinaia di preventivi sempre diversi e hanno bisogno di visualizzare vecchie voci di preventivi per stabilire un prezzo. La ricerca funziona sia per lettere, sia per significato: trova anche voci scritte con parole diverse ma simili. Così si ottengono le righe dei preventivi senza sfogliarli tutti a mano.",
+      "Ho realizzato uno strumento per cercare tra le voci dei vecchi preventivi. La ricerca funziona sia per lettere sia per significato, quindi può trovare descrizioni simili anche se scritte con parole diverse. Le voci recuperate permettono di consultare i prezzi precedenti senza sfogliare tutti i preventivi.",
     image: pricefinderImg.url,
     imageAlt: "Schermata di PriceFinder con i risultati di ricerca tra le voci dei preventivi",
   },
@@ -182,17 +182,17 @@ export const projects: Project[] = [
     type: "Sito web",
     need: "",
     solution:
-      "Sito web vetrina per una azienda agricola situata a Savigno (BO), visualizzabile comodamente da PC, tablet e cellulare. Sito che valorizza l'azienda e rende accessibile il contatto tra le parti tramite form Google e recapiti facili da trovare.\nOvviamente hosting, dominio e sicurezza sono stati compresi nel progetto da me svolto.",
+      "Ho realizzato il sito vetrina di un'azienda agricola a Savigno (BO), consultabile da computer, tablet e cellulare. Il sito presenta l'attività e permette di contattarla tramite un modulo Google e recapiti facili da trovare. Il progetto comprendeva anche hosting, dominio e sicurezza.",
     image: ipraImg.url,
     imageAlt: "Homepage del sito dell'Azienda Agricola I-Prá Savigno",
     imageTop: true,
   },
   {
     name: "Automazione aziendale semplice",
-    type: "Automazione e intelligenza artificiale",
-    need: "Il problema: le fatture in PDF arrivano in una cartella e qualcuno deve aprirle una per una, copiare i dati in un foglio di calcolo e avvisare la contabilità.",
+    type: "Automazione dei processi aziendali",
+    need: "Le fatture in PDF vanno aperte una per una: bisogna trascriverne i dati in un foglio di calcolo e inviare un riepilogo alla contabilità.",
     solution:
-      "Monitora una cartella Google Drive per nuovi file, estrae automaticamente i dati dalle fatture in formato PDF tramite Intelligenza Artificiale (OpenAI), registra le informazioni in Google Sheets e invia un riepilogo via email al team di contabilità.\nIn pratica: si carica la fattura nella cartella e il resto avviene da solo, senza trascrizioni a mano.",
+      "Ho realizzato un flusso che monitora una cartella Google Drive. Quando arriva una nuova fattura PDF, ne estrae i dati con l'intelligenza artificiale di OpenAI, li registra in Google Sheets e invia un riepilogo via email al team di contabilità.",
     tech: ["Google Drive", "OpenAI", "Google Sheets", "Gmail"],
     image: automazioneImg.url,
     imageAlt: "Schema del flusso di automazione: cartella Google Drive, lettura della fattura con AI, registrazione in Google Sheets, email alla contabilità",
