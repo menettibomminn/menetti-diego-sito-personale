@@ -145,7 +145,7 @@ function Home() {
           <h2 id="chi" className="text-3xl font-semibold md:text-4xl">Chi sono</h2>
           <div>
             <p className="text-lg text-muted-foreground">
-              Lavoro con piccole e medie imprese, artigiani e professionisti. Mi interessa capire come vengono usati i programmi nel lavoro quotidiano e dove un intervento può essere utile. Mi occupo personalmente dell'analisi e della realizzazione: non ci sono passaggi tra commerciale e tecnico.
+              Lavoro con piccole e medie imprese, artigiani e professionisti. Mi interessa capire come vengono usati i programmi nel lavoro quotidiano e dove un intervento può essere utile. Mi occupo personalmente dell'analisi e della realizzazione: non ci sono passaggi tra azienda e tecnico.
             </p>
             <Link to="/chi-sono" className="mt-4 inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:underline">Il mio approccio <ArrowRight className="size-4" aria-hidden /></Link>
           </div>
