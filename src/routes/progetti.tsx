@@ -7,9 +7,9 @@ export const Route = createFileRoute("/progetti")({
   head: () => ({
     meta: [
       { title: "Progetti: automazioni, software su misura e siti web | Menetti Diego" },
-      { name: "description", content: "Alcuni lavori di Diego Menetti: ricerca nello storico dei preventivi, sito per I-Prá Savigno e automazione delle fatture tra Google Drive, OpenAI e Google Sheets." },
+      { name: "description", content: "Alcuni lavori di Diego Menetti: ricerca nello storico dei preventivi, sito per I-Prá Savigno e canale di segnalazione anonima per il Modello 231." },
       { property: "og:title", content: "Progetti realizzati — Menetti Diego" },
-      { property: "og:description", content: "Cosa ho realizzato e come funziona: ricerca nei preventivi, sito di un'azienda agricola e registrazione automatica dei dati delle fatture." },
+      { property: "og:description", content: "Cosa ho realizzato e come funziona: ricerca nei preventivi, sito di un'azienda agricola e sito di segnalazione anonima basato su GlobaLeaks." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -22,7 +22,7 @@ function Progetti() {
   return (
     <>
       <PageIntro eyebrow="Progetti" title="Alcuni lavori realizzati">
-        Una ricerca nello storico dei preventivi, un sito per un'azienda agricola e un flusso per registrare le fatture. Sono esempi dei lavori che realizzo; pubblico solo quelli per cui ho l'autorizzazione del cliente.
+        Una ricerca nello storico dei preventivi, un sito per un'azienda agricola e un canale di segnalazione anonima. Sono esempi dei lavori che realizzo; pubblico solo quelli per cui ho l'autorizzazione del cliente.
       </PageIntro>
       <section className="container-page py-16">
         {publishedProjects.length === 0 ? (

@@ -1,6 +1,6 @@
 import pricefinderImg from "@/assets/pricefinder.jpg.asset.json";
 import ipraImg from "@/assets/ipra-savigno.png.asset.json";
-import automazioneImg from "@/assets/automazione-n8n.jpg.asset.json";
+import whistleblowingImg from "@/assets/whistleblowing-231.png.asset.json";
 
 /**
  * CONFIGURAZIONE CENTRALE DEL SITO
@@ -188,14 +188,14 @@ export const projects: Project[] = [
     imageTop: true,
   },
   {
-    name: "Automazione aziendale semplice",
-    type: "Automazione dei processi aziendali",
-    need: "Le fatture in PDF vanno aperte una per una: bisogna trascriverne i dati in un foglio di calcolo e inviare un riepilogo alla contabilità.",
+    name: "Sito di segnalazione anonima (Whistleblowing 231)",
+    type: "Sito web",
+    need: "",
     solution:
-      "Ho realizzato un flusso che monitora una cartella Google Drive. Quando arriva una nuova fattura PDF, ne estrae i dati con l'intelligenza artificiale di OpenAI, li registra in Google Sheets e invia un riepilogo via email al team di contabilità.",
-    tech: ["Google Drive", "OpenAI", "Google Sheets", "Gmail"],
-    image: automazioneImg.url,
-    imageAlt: "Schema del flusso di automazione: cartella Google Drive, lettura della fattura con AI, registrazione in Google Sheets, email alla contabilità",
+      "Ho realizzato un sito web di segnalazione anonima per conto di un'agriturismo che doveva adattarsi alle normative del Modello sicurezza 231. Funzionalità ed anonimato costruiti anche grazie a GlobaLeaks, software open source.",
+    image: whistleblowingImg.url,
+    imageAlt:
+      "Modulo di segnalazione anonima con i campi categoria della segnalazione, descrizione dei fatti, data e luogo dell'accaduto",
   },
 ];
 
