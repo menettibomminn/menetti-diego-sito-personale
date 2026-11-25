@@ -19,9 +19,9 @@ export const Route = createFileRoute("/")({
 });
 
 const needs: { icon: typeof Globe; title: string; text: string; slug: ServiceSlug; cta: string }[] = [
-  { icon: Repeat, slug: "automazione", title: "Ripeto ogni giorno gli stessi passaggi.", text: "Aprire fatture, trascrivere dati, preparare riepiloghi e inviarli via email. Esamino queste attività per capire quali passaggi automatizzare e quali controlli mantenere.", cta: "Descrivimi l'attività" },
-  { icon: Puzzle, slug: "software", title: "Devo ricopiare i dati tra più programmi.", text: "Il gestionale e i fogli di calcolo contengono le stesse informazioni, ma vanno aggiornati separatamente. Verifico come collegarli; se manca una funzione, valuto uno strumento su misura.", cta: "Dimmi quali programmi usi" },
-  { icon: Globe, slug: "siti-web", title: "Mi serve un sito, o devo aggiornare quello attuale.", text: "Realizzo siti per presentare servizi e prodotti e rendere facili da trovare i contatti. Posso occuparmi anche di dominio, hosting e manutenzione.", cta: "Parliamo del tuo sito" },
+  { icon: Repeat, slug: "automazione", title: "Ripeto ogni giorno gli stessi passaggi.", text: "Aprire fatture, trascrivere dati, preparare riepiloghi, inviare email e messaggi Whatsapp, ecc... \nEsamino queste attività per capire quali passaggi automatizzare e quali controlli mantenere.", cta: "Descrivimi l'attività" },
+  { icon: Puzzle, slug: "software", title: "Devo facilitare il passaggio dati tra applicazioni o ho bisogno di un software gestionale.", text: "Il gestionale e i fogli di calcolo contengono le stesse informazioni, ma vanno aggiornati separatamente. Verifico come collegarli; se manca una funzione, valuto uno strumento su misura.", cta: "Dimmi quali programmi usi" },
+  { icon: Globe, slug: "siti-web", title: "Mi serve un sito, o devo aggiornare quello attuale.", text: "Realizzo siti per presentare servizi e prodotti e rendere facili da trovare i contatti. Mi occupo anche di dominio, hosting, manutenzione e sicurezza informatica.", cta: "Parliamo del tuo sito" },
   { icon: LifeBuoy, slug: "consulenza", title: "Ho un problema informatico o un acquisto da valutare.", text: "Analizzo cosa non funziona e confronto le alternative. Ti aiuto a decidere quale intervento o programma è adatto al tuo lavoro.", cta: "Spiegami il problema" },
 ];
 
@@ -39,7 +39,7 @@ function Home() {
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">{site.role}</p>
           <h1 className="mt-3 max-w-3xl text-4xl font-semibold md:text-6xl">Automazioni e integrazioni software per PMI.</h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Sono Diego Menetti, consulente informatico indipendente. Realizzo automazioni per le attività ripetitive e collego i programmi che usi, così i dati non vanno ricopiati a mano. Quando serve, mi occupo anche di software su misura, consulenza e siti web. Dalla prima richiesta alla consegna, parli direttamente con me.
+            Sono Diego Menetti, consulente informatico freelancer. Realizzo software, automazioni informatiche e integrazioni AI. Quando serve, mi occupo anche di consulenza e siti web. Dalla prima richiesta alla consegna, parli direttamente e sempre solo con me.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <PrimaryLink servizio="automazione">Parliamo del tuo lavoro</PrimaryLink>

@@ -80,7 +80,7 @@ export const services: Service[] = [
   {
     slug: "software",
     title: "Integrazioni tra software e sviluppo su misura",
-    short: "Collego i programmi che usi già. Se manca una funzione, valuto uno strumento su misura.",
+    short: "Collego i programmi che usi già o ne creo uno nuovo. Se manca una funzione, valuto uno strumento su misura.",
     intro:
       "Se aggiorni il gestionale e poi devi riportare gli stessi dati in un foglio di calcolo, il lavoro si raddoppia. Verifico come collegare i programmi per trasferire le informazioni senza ricopiarle. Uso le API, cioè i collegamenti messi a disposizione dai software, quando presenti. Se serve una funzione non coperta dagli strumenti esistenti, posso svilupparla su misura.",
     forWho:
