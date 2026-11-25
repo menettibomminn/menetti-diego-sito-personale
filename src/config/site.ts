@@ -192,7 +192,7 @@ export const projects: Project[] = [
     type: "Sito web",
     need: "",
     solution:
-      "Ho realizzato un sito web di segnalazione anonima per conto di un'agriturismo che doveva adattarsi alle normative del Modello sicurezza 231. Funzionalità ed anonimato costruiti anche grazie a GlobaLeaks, software open source.",
+      "Ho realizzato un sito web di segnalazione anonima per conto di un agriturismo che doveva adattarsi alle normative del Modello sicurezza 231. Funzionalità ed anonimato costruiti anche grazie a GlobaLeaks, software open source.",
     image: whistleblowingImg.url,
     imageAlt:
       "Modulo di segnalazione anonima con i campi categoria della segnalazione, descrizione dei fatti, data e luogo dell'accaduto",
